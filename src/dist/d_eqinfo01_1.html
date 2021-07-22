@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />    
+  </head>
+<body>
+<div class="wrap">
+  <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+    <a href="#cont" tabindex="0">본문 바로가기</a>
+    <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="https://www.kisti.re.kr/" target="_blank">
+        한국과학기술정보연구원
+      </a> 
+    </span>        
+    <h1><a href="/html/main.html">지진 사회현안서비스 시스템</a></h1>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav" role="navigat ion">
+        <li class="on"><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="">국내지진 발생정보</a></li>
+            <li><a href="">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li><a href="">지진유감신고</a>
+          <ul class="sub">
+            <li><a href="">지진유감 신고하기</a></li>
+            <li><a href="">지진유감 신고이력</a></li>
+            <li><a href="">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="">지진피해 신고하기</a></li>
+            <li><a href="">지진피해 신고이력</a></li>
+            <li><a href="">부산 지진피해 위험요인</a></li>
+          </ul>
+        </li>
+        <li><a href="">지진위험성분석</a>
+          <ul class="sub">
+            <li><a href="">지진대비 필요성</a></li>
+            <li><a href="">부산 지진위험성 분석</a></li>
+            <li><a href="">지진피해대응</a></li>
+            <li><a href="">관련사이트</a></li>
+            <li><a href="">국외 지진피해사례</a></li>
+            <li><a href="">국내 지진피해사례</a></li>
+            <li><a href="">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="">관리자지원</a>
+          <ul class="sub">
+            <li><a href="">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div id="cont" class="cont max_width">
+    <div class="content_tit">
+      <h1>국내지진 발생정보</h1>
+      <span>
+        <a href="/html/domestic.html" class="btn axib axi_back">목록</a>
+      </span>
+    </div>
+    <div class="content_body quakeInfo">
+      <div class="fl section">        
+        <div class="tit">
+            <h2>GIS</h2>
+            <span class="fr">
+              <button class="btn axib axi_refresh">지도초기화</button>
+              <button class="btn axib axi_plus">크게보기</button>
+            </span>
+        </div>
+        <div class="gis_wrap">
+          <img src="http://placehold.it/500x600" alt="gis 영역">
+          <div class="legend">
+            <ul>
+              <li mag="7">8 ≤ M ＜ 9 </li>
+              <li mag="6">7 ≤ M ＜ 8 </li>
+              <li mag="5">6 ≤ M ＜ 7 </li>
+              <li mag="4">5 ≤ M ＜ 6 </li>
+              <li mag="3">4 ≤ M ＜ 5 </li>
+              <li mag="2">3 ≤ M ＜ 4 </li>
+              <li mag="1">2 ≤ M ＜ 3 </li>
+            </ul>
+          </div>
+        </div>      
+      </div>
+      <div class="fr">
+        <div class="section quake_info">
+          <div class="tit">
+            <h2>지진정보</h2>
+          </div>
+          <dl class="dot_list use_grid divide10 box_gray">
+            <dt class="w2">발생시각</dt>
+            <dd class="w8">2020-03-25 15:15:16</dd>
+            <dt class="w2">발생지역</dt>
+            <dd class="w8">충북 청주시 청원구 서남서쪽 1㎞ 지역</dd>
+            <dt class="w2">규모</dt>
+            <dd class="w8">3.8</dd>
+            <dt class="w2">깊이</dt>
+            <dd class="w8">10.00㎞</dd>
+            <dt class="w2">참고사항</dt>
+            <dd class="w8">지진통보시스템 테스트입니다.</dd>
+          </dl>        
+        </div>    
+        <div class="section">
+          <div class="tit">
+            <h2>행정구역별 최대진도값</h2>
+          </div>
+          <div class="area_wrap">
+            <ul>
+              <li class="on"><button type="button">서울<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">부산<span class="mag">Ⅲ</span></button></li>
+              <li><button type="button">대구<span class="mag">Ⅷ</span></button></li>
+              <li><button type="button">인천<span class="mag">Ⅳ</span></button></li>
+              <li><button type="button">광주<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">대전<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">울산<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">세종<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">경기<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">강원<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">충북<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">충남<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">전북<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">전남<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">경북<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">경남<span class="mag">Ⅱ</span></button></li>
+              <li><button type="button">제주<span class="mag">Ⅱ</span></button></li>
+            </ul>
+            <dl class="area_dtl dot_list">
+              <dt>강남구</dt>
+              <dd>Ⅱ</dd>
+              <dt>강동구</dt>
+              <dd>Ⅱ</dd>
+              <dt>강서구</dt>
+              <dd>Ⅱ</dd>                  
+              <dt>관악구</dt>
+              <dd>Ⅱ</dd>
+              <dt>광진구</dt>
+              <dd>Ⅱ</dd>
+              <dt>구로구</dt>
+              <dd>Ⅱ</dd>                  
+              <dt>금천구</dt>
+              <dd>Ⅱ</dd>
+              <dt>노원구</dt>
+              <dd>Ⅱ</dd>
+              <dt>도봉구</dt>
+              <dd>Ⅱ</dd>                  
+              <dt>동대문구</dt>
+              <dd>Ⅷ</dd>
+              <dt>동작구</dt>
+              <dd>Ⅷ</dd>
+              <dt>마포구</dt>
+              <dd>Ⅷ</dd>                  
+              <dt>서대문구</dt>
+              <dd>Ⅷ</dd>
+              <dt>서초구</dt>
+              <dd>Ⅷ</dd>
+              <dt>성동구</dt>
+              <dd>Ⅷ</dd>                  
+              <dt>성북구</dt>
+              <dd>Ⅷ</dd>
+              <dt>양천구</dt>
+              <dd>Ⅷ</dd>
+              <dt>영등포구</dt>
+              <dd>Ⅷ</dd>                  
+              <dt>용산구</dt>
+              <dd>Ⅷ</dd>
+              <dt>은평구</dt>
+              <dd>Ⅷ</dd>
+              <dt>종로구</dt>
+              <dd>Ⅷ</dd>                  
+              <dt>중구</dt>
+              <dd>Ⅷ</dd>
+              <dt>중랑구</dt>
+              <dd>Ⅷ</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>    
+</div>
+
+</body>
+</html>

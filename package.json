@@ -1,0 +1,29 @@
+{
+  "name": "dds",
+  "version": "1.0.0",
+  "description": "부산 지진 피해 집계 및 AI 위험성 분석 시스템(2차년도)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahwasa/dds.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahwasa/dds/issues"
+  },
+  "homepage": "https://github.com/sahwasa/dds#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  },
+  "dependencies": {
+    "jqGrid": "^5.5.5",
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.12.1"
+  }
+}

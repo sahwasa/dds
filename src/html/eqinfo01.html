@@ -1,0 +1,119 @@
+@@include('inc/top.html')
+<body>
+<div class="wrap">
+  @@include('inc/header.html')
+  <div id="cont" class="cont max_width">
+    <div class="content_tit">
+      <h1>국내지진 발생정보</h1>
+    </div>
+    <div class="content_body quakeInfo">
+      <div class="fl section">
+        <div class="tit">
+          <h2>GIS</h2>
+          <span class="fr">
+            <button class="btn axib axi_refresh">지도초기화</button>
+            <button class="btn axib axi_plus">크게보기</button>
+          </span>
+        </div>
+        <div class="gis_wrap">
+          <img src="http://placehold.it/500x600" alt="gis 영역">
+          <div class="legend">
+            <ul>
+              <li mag="7">8 ≤ M ＜ 9 </li>
+              <li mag="6">7 ≤ M ＜ 8 </li>
+              <li mag="5">6 ≤ M ＜ 7 </li>
+              <li mag="4">5 ≤ M ＜ 6 </li>
+              <li mag="3">4 ≤ M ＜ 5 </li>
+              <li mag="2">3 ≤ M ＜ 4 </li>
+              <li mag="1">2 ≤ M ＜ 3 </li>
+            </ul>
+          </div>
+        </div>      
+      </div>
+      <div class="fr section">      
+        <div class="tit gis_arerT">
+          <h2>국내지진 발생목록</h2>
+        </div>
+        <div class="search">
+          <dl class="flex_dl">
+            <dt>지진정보</dt>
+            <dd>
+              <ul class="use_grid divide10">
+                <li class="input_s w4"><label for="">발생년도</label>
+                  <input type="text" /> ~ <input type="text" /> 년
+                </li>            
+                <li class="input_s w3"><label for="">위도</label>
+                  <input type="text" /> ~ <input type="text" />
+                </li>
+                <li class="input_s w3"><label for="">경도</label>
+                  <input type="text" /> ~ <input type="text" />
+                </li>            
+                <li class="input_s w10 label_fix"><label for="">규모</label>
+                  <input type="text" /> ~ <input type="text" />
+                </li>       
+              </ul>
+            </dd>
+            <dt>상세정보</dt>
+            <dd>
+              <ul class="use_grid divide10">
+                <li class="w4"><label for="" class="fix_w4">진 앙 지</label>
+                  <input type="text" />
+                </li>
+                <li class="input_s w6"><label for="">반경</label>
+                  <input type="text" /> ㎞
+                  <button type="button" class="ico_btn ico_map" title="GIS에서 위치선택">위치선택</button>
+                </li>                          
+              </ul>
+            </dd>
+          </dl>
+          <span class="act_search">
+            <button type="button" class="btn btn_pink">초기화</button>
+            <button type="button" class="btn btn_mint">검색</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <div class="tbl_areaT">
+            <span class="count">
+              <b>건수</b>193건            
+            </span>
+            <span class="fr">
+              <button type="" class="btn btn_red">엑셀저장</button>
+            </span>
+          </div>
+          <table class="tbl_default tbl_hover">
+            <thead>
+              <tr>
+                <th scope="col" width="60">번호</th>
+                <th scope="col" width="100">일자(양력&sol;음력)</th>
+                <th scope="col" width="100">위도&sol;경도</th>
+                <th scope="col" width="60">최대진도</th>
+                <th scope="col" width="60">규모</th>
+                <th scope="col" width="80">깊이(㎞)</th>
+                <th scope="col" >진앙지</th>
+                <th scope="col" width="60">상세</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td class="alignL">-</td>
+                <td><a href="/html/domestic_dtl.html" class="axi_only axi_dtl">상세</a></td>
+              </tr>
+            </tbody>
+          </table>
+          @@include('inc/paginate.html')
+        </div>
+
+      </div>
+    </div>
+  </div>
+  @@include('inc/footer.html')    
+</div>
+
+</body>
+</html>
