@@ -1,0 +1,37 @@
+@@include('inc/top.html')
+<body style="font-size:0;">
+  <!--@@include('inc/header.html')-->
+  <div class="login_wrap">
+    <div class="login_box">
+      <h1 class="tit_login">
+        <img src="../img/logo.png" alt="부산 지진 피해 집계 및 AI 위험성 분석 시스템 로고">
+        <span>부산 지진 피해 집계 및 AI 위험성 분석 시스템</span>
+      </h1>
+      <div class="login">
+        <h2>LOGIN</h2>
+        <div class="flex_wrap f_sb">
+          <ul>
+            <li>
+              <label for="login_id">ID</label>
+              <input type="text" id="login_id">
+            </li>
+            <li>
+              <label for="login_pw">Password</label>
+              <input type="password" id="login_pw">
+            </li>
+          </ul>
+          <button type="button" class="btn btn_mint">로그인</button>
+        </div>  
+        <span class="login_check">
+          <input type="checkbox" id="login_remember"><label for="login_remember">ID 기억하기</label>
+        </span>
+      </div>
+      <p class="login_backhome alignR">
+        메인으로 <a href="#">돌아가기</a>
+      </p>
+    </div>
+  </div>
+  <!--@@include('inc/footer.html')-->
+
+</body>
+</html>
