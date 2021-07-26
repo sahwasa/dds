@@ -32,6 +32,16 @@
 
 .cont{text-align:left;margin:160px 0 20px;}
 
+
+/* lnb */
+.breadcrumb{padding-bottom:8px;text-align:right;}
+.breadcrumb li:first-child a{position:relative;top:1px;display:block;width:12px;height:12px;background:url(../img/ico_home.png)no-repeat;}
+.breadcrumb li:first-child a::before{display:none;}
+.breadcrumb li{display:inline-block;}
+.breadcrumb a{font-size:14px;vertical-align:top;letter-spacing:-1.4px;color:#777;}
+.breadcrumb li:last-child a{font-weight:bold;color:#555;}
+.breadcrumb a::before{content:'\e850';display:inline-block;font-family:'axicon';font-weight:normal;color:#999;margin:0 4px;}
+
 /* search */
 .search{position:relative;border:0 solid #166293;border-width:1px 0;margin-bottom:20px;}
 .search ul{display:block;width:calc(100% - 70px);padding:10px 0 5px 0;overflow:hidden;}
