@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">
+    
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />    
+  </head>
+<body>
+<div class="wrap">
+  <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="main.html">dds</a> 
+    </span>        
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav">
+        <li><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
+            <li><a href="eqinfo02.html">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li class="on"><a href="felt01.html">지진유감신고</a>
+          <ul class="sub">
+            <li class="on"><a href="felt01.html">지진유감 신고하기</a></li>
+            <li><a href="felt02.html">지진유감 신고이력</a></li>
+            <li><a href="felt03.html">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="dam01.html">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="dam01.html">지진피해 신고하기</a></li>
+            <li><a href="dam02.html">지진피해 신고이력</a></li>
+            <li><a href="dam03.html">부산 지진피해 위험요인</a></li>
+          </ul>
+        </li>
+        <li><a href="case01.html">지진위험성분석</a>
+          <ul class="sub">
+            <li><a href="case01.html">지진대비 필요성</a></li>
+            <li><a href="case02.html">부산 지진위험성 분석</a></li>
+            <li><a href="case03.html">지진피해대응</a></li>
+            <li><a href="case04.html">관련사이트</a></li>
+            <li><a href="case05.html">국외 지진피해사례</a></li>
+            <li><a href="case06.html">국내 지진피해사례</a></li>
+            <li><a href="case07.html">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="admin01.html">관리자지원</a>
+          <ul class="sub">
+            <li><a href="admin01.html">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div id="cont" class="cont max_width">
+    <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
+    <div class="content_tit">
+      <h1>지진유감 신고하기</h1>
+    </div>
+    <div class="content_body declare d_flet01">
+      <div class="fl section">
+        <div class="tit">
+          <h2 class="blind">선택정보</h2>
+        </div>
+        <!-- 좌측 메뉴 아코디언 -->
+        <div class="accordion felt01">
+          <div>
+            <h3>지진정보
+            <span class="btn_wrap">
+              <button type="button" class="btn btn_white">다른지진 선택</button>
+            </span>
+            </h3>
+            <div>
+              <dl class="flex_wrap eq_check">
+                <dt>진원시</dt>
+                <dd>2008-05-31 21:59:30.0</dd>
+                <dt>진원지</dt>
+                <dd>제주 제주시 서쪽 78㎞ 해역</dd>
+                <dt class="fix3">위도</dt>
+                <dd>38.82</dd>
+                <dt class="fix3">경도</dt>
+                <dd>125.65</dd>
+                <dt class="fix3">규모</dt>
+                <dd>4.2</dd>
+                <dt class="blind">gis</dt>
+                <dd>
+                  <img src="http://placehold.it/150x100" alt="">
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div>
+            <h3>신고인정보</h3>
+            <div>
+              <dl class="flex_wrap declarant_check">
+                <dt class="fix3">성명</dt>
+                <dd>홍**</dd>
+                <dt>연락처</dt>
+                <dd>010-1234-5678</dd>
+                <dt>개인정보수집 동의여부</dt>
+                <dd>동의함</dd>
+              </dl>
+            </div>
+          </div>
+          <div>
+            <h3>지역정보</h3>
+            <div>
+              <dl class="flex_wrap area_check">
+                <dt>감지시각</dt>
+                <dd>2021-07-27 11:12:34</dd>
+                <dt>위치정보</dt>
+                <dd>부산시 중구 창선동</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 신고인 정보 -->      
+      <div class="fr section declarant">      
+        <div class="tit">
+          <h2>신고인 정보</h2>
+        </div>
+        <div class="body">
+          <dl class="flex_wrap declarant_info dot_dt">
+            <dt><label for="">성명</label></dt>
+            <dd><input type="text"></dd>
+            <dt><label for="">연락처</label></dt>
+            <dd><input type="text"></dd>
+            <dt class="privacy">개인정보 수집 및 이용안내
+            <span class="fr">
+              <label for="agree"><input type="checkbox" name="" id="agree"> 동의</label>
+            </span>
+            </dt>
+            <dd class="privacy">
+              <div class="scroll">
+                <p>
+                https://www.privacy.go.kr/a3sc/per/inf/perInfStep01.do
+                만들어서 사용??
+                </p>
+                <h1>제1조 개인정보의 처리목적</h1>
+                <ol>
+                  <li>① 본 시스템은 대국민 서비스 제공 및 민원처리, 소관업무 수행 등의 목적으로 필요에 의한 최소한으로 개인정보를 처리하고 있습니다.</li>
+                </ol>
+              </div>
+            </dd>
+          </dl>
+          <div class="btn_bot">
+            <button type="button" class="btn btn_red">저장</button>
+          </div>
+        </div>
+      </div>
+      <!-- 신고인 정보__e -->
+      <!-- 지역정보 -->
+      <div class="fr section area">
+        <div class="tit">
+          <h2>지역정보</h2>
+        </div>
+        <div class="body">
+          <dl class="dot_dt area_info">
+            <dt>지진진동을 느끼셨습니까?</dt>
+            <dd>
+              <div class="ipt_wrap">
+                <label for=""><input type="radio" name="" id="">예</label>
+                <label for=""><input type="radio" name="" id="">아니오</label>
+              </div>
+            </dd>
+            <dt>지진감지 시각</dt>
+            <dd>
+              <div class="ipt_wrap">
+                <input type="text"  class="datetimepicker datetimepic" title="지진감지 시각"/>
+                <label for=""><input type="radio" name="" id="" /> 기억안남</label>
+              </div>
+            </dd>
+            <dt>지진진동을 감지했을 때 지역을 선택해주세요.</dt>
+            <dd>
+              <div class="ipt_wrap">
+                <select name="" id="">
+                  <option value="">부산광역시</option>
+                </select>
+                <select name="" id="">
+                  <option value="">시군구</option>
+                </select>
+                <select name="" id="">
+                  <option value="">읍면동</option>
+                </select>
+                <label for=""><input type="radio" name="" id="" /> 기억안남</label>
+              </div>
+              <div class="gis_wrap">
+                <span class="btn_wrap">
+                  <button class="btn axib axi_refresh">현위치</button>
+                </span>
+                <img src="http://placehold.it/400x250" alt="">
+              </div>
+            </dd>
+          </dl>
+          <div class="btn_bot">
+            <button type="button" class="btn btn_red">저장</button>
+          </div>
+        </div>
+      </div>
+      <!-- 지역정보__e -->
+      <!-- 상세내용 -->
+      <!-- 지진유감 신고시 상세내용에 대한 항목 정의 필요   (에트리 제공 요청) -->
+      <div class="fr section dtl">
+        <div class="tit">
+          <h2>상세내용</h2>
+        </div>
+        <div class="body">
+          <div class="pageinfo section">
+            <h2>알림</h2>
+            <p>하기 양식은 모두 선택사항입니다. 설문에 응해주시면 진도를 계산하는 지도를 만드는데 도움이 됩니다.</p>
+          </div>
+          <dl class="dot_dt area_info">
+            <dt>지진진동을 감지한 장소</dt>
+            <dd>
+              <div class="ipt_wrap">
+                <select name="" id="">
+                  <option value="">건물안</option>
+                </select>
+                <select name="" id="">
+                  <option value="">단독주택</option>
+                </select>
+                <select name="" id="">
+                  <option value="">건물층 수</option>
+                </select>
+                <input type="text" placeholder="상세">
+              </div>
+            </dd>
+            <dt><label for="">주변사람도 진동을 감지하였습니까?</label></dt>
+            <dd>
+              <select name="" id="">
+                <option value="">혼자</option>
+                <option value="">대부분</option>
+                <option value="">모두</option>
+              </select>
+            </dd>
+            <dt>흔들림을 어느정도 느꼈습니까?</dt>
+            <dd>
+              <div calss="slider">
+                <label for="minbeds" class="blind">흔들림 정도</label>
+                <select name="minbeds" id="minbeds">
+                  <option>조명흔들림</option>
+                  <option>어항물흔들림</option>
+                  <option>창문흔들림</option>
+                  <option>자동차흔들림</option>
+                  <option>건물흔들림</option>
+                  <option>걷기어려움</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <div class="btn_bot">
+            <button type="button" class="btn btn_red">완료 및 제출</button>
+          </div>
+        </div>
+      </div>
+      <!-- 상세내용__e -->
+      <div class="fr section fin">
+        <p>
+          지진유감 신고 입력이 완료되었습니다.<br />
+          신고해주셔서 감사합니다.
+        </p>
+        <div class="btn_bot">
+          <a href="#" class="btn btn_red">지진유감 집계 바로가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>
+<script src="../../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../../js/ui_common.js"></script>
+  <script>
+
+  // slider (jquery-ui)
+    var select = $( "#minbeds" );
+    var slider = $( "<div id='slider'></div>" ).insertAfter( select ).slider({
+      min: 1,
+      max: 6,
+      range: "min",
+      value: select[ 0 ].selectedIndex + 1,
+      slide: function( event, ui ) {
+        select[ 0 ].selectedIndex = ui.value - 1;
+      }
+    });
+    $( "#minbeds" ).on( "change", function() {
+      slider.slider( "value", this.selectedIndex + 1 );
+    });
+</script>  
+</div>
+</body>
+</html>

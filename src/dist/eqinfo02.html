@@ -5,32 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/style.css" />    
+    <link rel="stylesheet" href="../../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">
+    
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />    
   </head>
 <body>
 <div class="wrap">
   <!-- 바로가기 메뉴 -->
 <div id="accessibility">
-    <a href="#cont" tabindex="0">본문 바로가기</a>
-    <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
 </div>
 <hr />
 <!-- 바로가기 메뉴__e -->
 <div class="header">
   <div class="gnb max_width">
     <span class="author">
-      <a href="https://www.kisti.re.kr/" target="_blank">
-        한국과학기술정보연구원
-      </a> 
+      <a href="main.html">dds</a> 
     </span>        
-    <h1><a href="main.html">부산 지진 피해 집계 및 AI 위험성 분석 시스템</a></h1>
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
   </div>
   <div id="lnb" class="lnb min_width">
     <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
     <div class="nav_wrap max_width">
-      <ul class="nav" role="navigat ion">
+      <ul class="nav">
         <li><a href="eqinfo01.html">지진발생정보</a>
           <ul class="sub">
             <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
@@ -72,6 +73,13 @@
   </div>
 </div>
   <div id="cont" class="cont max_width">
+    <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
     <div class="content_tit">
       <h1>국외지진</h1>
     </div>
@@ -88,13 +96,13 @@
           <img src="http://placehold.it/500x600" alt="gis 영역">
           <div class="legend">
             <ul>
-              <li mag="7">8 ≤ M ＜ 9 </li>
-              <li mag="6">7 ≤ M ＜ 8 </li>
-              <li mag="5">6 ≤ M ＜ 7 </li>
-              <li mag="4">5 ≤ M ＜ 6 </li>
-              <li mag="3">4 ≤ M ＜ 5 </li>
-              <li mag="2">3 ≤ M ＜ 4 </li>
-              <li mag="1">2 ≤ M ＜ 3 </li>
+              <li class="mag7">8 ≤ M ＜ 9 </li>
+              <li class="mag6">7 ≤ M ＜ 8 </li>
+              <li class="mag5">6 ≤ M ＜ 7 </li>
+              <li class="mag4">5 ≤ M ＜ 6 </li>
+              <li class="mag3">4 ≤ M ＜ 5 </li>
+              <li class="mag2">3 ≤ M ＜ 4 </li>
+              <li class="mag1">2 ≤ M ＜ 3 </li>
             </ul>
           </div>
         </div>      
@@ -197,8 +205,13 @@
       Copyright ⓒ All Rights Reserved.
     </p>
   </div>
-</div>    
 </div>
-
+<script src="../../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../../js/ui_common.js"></script>    
+</div>
 </body>
 </html>
