@@ -3,10 +3,11 @@
 <div class="wrap">
   @@include('inc/header.html')
   <div id="cont" class="cont max_width">
+    @@include('inc/breadcrumb.html')
     <div class="content_tit">
       <h1>국내지진 발생정보</h1>
       <span>
-        <a href="/html/domestic.html" class="btn axib axi_back">목록</a>
+        <a href="eqinfo01.html" class="btn axib axi_back">목록</a>
       </span>
     </div>
     <div class="content_body quakeInfo">
@@ -22,13 +23,13 @@
           <img src="http://placehold.it/500x600" alt="gis 영역">
           <div class="legend">
             <ul>
-              <li mag="7">8 ≤ M ＜ 9 </li>
-              <li mag="6">7 ≤ M ＜ 8 </li>
-              <li mag="5">6 ≤ M ＜ 7 </li>
-              <li mag="4">5 ≤ M ＜ 6 </li>
-              <li mag="3">4 ≤ M ＜ 5 </li>
-              <li mag="2">3 ≤ M ＜ 4 </li>
-              <li mag="1">2 ≤ M ＜ 3 </li>
+              <li class="mag7">8 ≤ M ＜ 9 </li>
+              <li class="mag6">7 ≤ M ＜ 8 </li>
+              <li class="mag5">6 ≤ M ＜ 7 </li>
+              <li class="mag4">5 ≤ M ＜ 6 </li>
+              <li class="mag3">4 ≤ M ＜ 5 </li>
+              <li class="mag2">3 ≤ M ＜ 4 </li>
+              <li class="mag1">2 ≤ M ＜ 3 </li>
             </ul>
           </div>
         </div>      
@@ -130,6 +131,5 @@
   </div>
   @@include('inc/footer.html')    
 </div>
-
 </body>
 </html>

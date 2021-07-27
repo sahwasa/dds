@@ -84,11 +84,12 @@ table{border:0;border-spacing:0;width:100%;text-align:center;border-collapse:col
 p{text-align:justify;}
 button{cursor:pointer;box-sizing:border-box;}
 .block,.block div{display:block;}
-input, textarea {border:1px solid #a9a9a9;color:#333;vertical-align:middle;background-color:rgba(255,255,255,.9);}
+input, textarea, select {border:1px solid #a9a9a9;color:#333;vertical-align:middle;background-color:rgba(255,255,255,.9);}
 b{font-weight:normal;font-family:'notokrM';}
 
 .scroll{overflow-y:scroll;background-color:#f5f5f5;}
 .full{display:inline-block;width:100%!important;min-width:auto;}
+.flex_wrap{display:flex;flex-wrap:wrap;}
 
 .noPd{padding: 0 !important;}
 .noBg{background-image: none !important;}
@@ -119,13 +120,12 @@ b{font-weight:normal;font-family:'notokrM';}
 .divideR::before{left:auto;right:5px;}
 
 /* accessibility */
-#accessibility{position:relative;display:block;z-index:999;}
+#accessibility{position:relative;display:block;z-index:9999;}
 #accessibility a{display:block;width:1px;height:1px;margin-bottom:-1px;overflow:hidden;text-align:center;color:#fff;}
 #accessibility a:focus,#accessibility a:active{width:100%;height:auto;padding:5px 0;background:#09f;}
 
 /* btn */
-.btn{border-width:1px;border-style:solid;color:#fff;text-align:center;text-indent:0;line-height:18px;border-radius:3px;padding:0 6px 1px;font-family:'notokrR';background-color:#fff;}
-.btn_r{padding:3px 15px;border-radius:0;font-size:15px;}
+.btn{border-width:1px;border-style:solid;color:#fff;text-align:center;text-indent:0;border-radius:3px;padding:0 6px 1px;font-family:'notokrR';background-color:#fff;}
 .btn_white{color:#777;border:1px solid #ccc!important;}
 .btn_red{border-color:#f7574d;background-color:#f7574d;}
 .btn_green{border-color:#519488;background-color:#61ac9f;}
@@ -180,7 +180,6 @@ td .ico_btn{vertical-align:top;margin-top:3px;}
 .overlay{position:fixed;left:0;top:0;height:100%;background:rgba(0,0,0,.3);z-index:1000;}
 
 /* input [ radio | checkbox ] */
-label{vertical-align:middle;}
 [required]::before,
 .required::after{content:" *";color:#f35857;font-size:11px;font-weight:600;}
 [required]::before{margin-right:5px;}
@@ -188,7 +187,7 @@ input,
 select{padding:1px 5px 2px;box-sizing:border-box;height:25px;}
 select[multiple]{height:auto;}
 input[type="text"],
-input[type="password"]{height:25px;}
+input[type="password"]{height:24px;}
 input[type="radio"]{border:none;margin-right:3px;}
 select{vertical-align:bottom\9;padding-right:0;}
 select::-ms-expand{background:none;border:none;color:#606060;}
@@ -203,6 +202,7 @@ textarea[disabled]{border:1px solid #999;color:#999;background-color:#fefefe;}
 .from,
 .datepicker,
 .date{width:96px;}
+.datetimepicker{width:170px;letter-spacing:0;}
 .timeform{width:50px;min-width:auto!important;}
 .radio_wrap label{margin-right:5px;}
 label input{margin-top:-3px;}
@@ -223,12 +223,7 @@ label input{margin-top:-3px;}
 .ui-datepicker select.ui-datepicker-year{width:40%;margin-bottom:3px;padding:0;}
 .ui-datepicker select.ui-datepicker-year{width:42%;}
 .ui-datepicker select.ui-datepicker-month{margin-left:8px;}
-.ui-datepicker-trigger{position:relative;right:20px;top:50%;margin-right:-21px;cursor:pointer;}
-
-
-.ui-helper-hidden-accessible,
-.ui-widget,
-.ui-widget div{display:block;width:auto;box-sizing:content-box;}
+.ui-datepicker-trigger{position:relative;right:25px;top:50%;margin-right:-21px;cursor:pointer;}
 .ui-datepicker{display:none;}
 .ui-widget .ui-icon{width:16px;}
 .ui-widget-content a{box-sizing:content-box;}
@@ -251,6 +246,20 @@ label input{margin-top:-3px;}
 .ui_checkbox{display:inline-block;}
 .ui_checkbox label{display:inline-block;height:22px;padding:0 10px;border-radius:3px;vertical-align:middle;}
 
+.ui-accordion .ui-accordion-content{padding:1em;}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover{background:#367fa9;border-color:#3278a0;color:#fff;}
+
+.ui-timepicker-div.ui-timepicker-oneLine dl dd, .ui-timepicker-div.ui-timepicker-oneLine dl dd>div{width:auto;}
+.ui-timepicker-div .ui_tpicker_unit_hide,
+.ui-timepicker-div .ui_tpicker_unit_hide:before{display: none!important;}
+.ui-timepicker-oneLine ::before{margin:0 5px;}
+
+.ui-slider{margin-top:10px;}
 
 /* paginate */
 .paginate{margin-top:15px;padding:15px 0;text-align:center}
