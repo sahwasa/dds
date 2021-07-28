@@ -1,0 +1,128 @@
+@@include('inc/top.html')
+<body>
+<div class="wrap">
+  @@include('inc/header.html')
+  <div id="cont" class="cont max_width">
+    @@include('inc/breadcrumb.html')
+    <div class="content_tit">
+      <h1>지진유감 신고이력</h1>
+    </div>
+    <div class="content_body felt02">
+      <div class="fl section">
+        <div class="tit">
+          <h2>GIS</h2>
+          <span class="fr">
+            <button type="button" class="btn btn_blueline">다른지진 선택</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <table class="tbl_row">
+            <tr>
+              <th scope="row">지진번호</th>
+              <td>2021070812</td>
+              <th scope="row">규모</th>
+              <td>2.6</td>
+              <th scope="row">발생시각</th>
+              <td>2021-07-27 12:34:45</td>
+            </tr>
+            <tr>
+              <th scope="row">발생위치</th>
+              <td colspan="5" class="alignL">부산시 중구 00동 00</td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="gis_wrap">
+          <img src="http://placehold.it/500x536" alt="gis 영역">
+          <i class="epicenter" style="left:102px;top:295px;">진앙지</i>
+          <div class="map_detail declarant_dtl" style="left:4px;top:120px;">
+            <h1 class="blind">신고자 정보</h1>
+            <dl>
+              <dt class="fix4">신고인</dt>
+              <dd>홍길동</dd>
+              <dt class="fix4">연락처</dt>
+              <dd>010-1234-5678</dd>
+              <dt>지진감지</dt>
+              <dd>예</dd>
+              <dt>감지시각</dt>
+              <dd>2021-07-27 12:34:56</dd>
+              <dt>위치정보</dt>
+              <dd>부산시 중구 남포동</dd>
+              <dt>감지장소</dt>
+              <dd>건물내부(단독주택)</dd>
+            </dl>
+          </div>
+        </div>      
+      </div>
+      <div class="fr section">      
+        <div class="tit">
+          <h2>신고이력</h2>
+          <span class="fr">
+            <button type="button" class="btn btn_blueline">알 수 없는 이벤트 신고이력</button>
+            <button type="button" class="btn btn_blueline">유감신고 일괄등록</button>
+          </span>
+        </div>
+        <div class="search">
+          <ul class="use_grid">
+            <li><label for="">신고일자</label>
+              <span class="period_multi">
+                <input type="text" class="date from" title="신고일자 시작범위" name="d_date" />
+                <input type="text" class="date to" title="신고일자 종료범위" name="d_date" />
+              </span>
+            </li>          
+            <li><label for="">신고지역</label>
+              <select name="" id="" title="시군구"><option value=""></option></select>
+              <select name="" id="" title="읍면동"><option value=""></option></select>
+            </li>
+          </ul>
+          <span class="act_search">
+            <button type="button" class="btn btn_mint">검색</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <div class="tbl_areaT">
+            <span class="count">
+              <b>건수</b>193건            
+            </span>
+            <span class="fr">
+              <button type="button" class="btn btn_red">CSV 저장</button>
+            </span>
+          </div>
+          <table class="tbl_default">
+            <thead>
+              <tr>
+                <th id="th1" width="95">신고인</th>
+                <th id="th2" width="">신고지역</th>
+                <th id="th3" width="55">유감진도</th>
+                <th id="th4" width="55">계기진도</th>
+                <th id="th5" width="55">예측진도</th>
+                <th id="th6" width="80">신고일자</th>
+                <th id="th7" width="55">거리</th>
+                <th id="th8" width="85">유효성검증</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="tbl_scroll" style="height:481px;">
+            <table class="tbl_default tbl_hover">
+              <tbody>
+                <tr>
+                  <td width="95" headers="th1">홍길동<span>(010-1234-5678)</span></td>
+                  <td width="" headers="th2" class="alignL">부산시 중구 00동</td>
+                  <td width="55" headers="th3">Ⅲ</td>
+                  <td width="55" headers="th4">Ⅲ</td>
+                  <td width="55" headers="th5">Ⅲ</td>
+                  <td width="80" headers="th6">2013-05-15 22:12:32</td>
+                  <td width="55" headers="th7">15㎞</td>
+                  <td width="70" headers="th8"><button class="btn_toggle effect on"></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('inc/footer.html')    
+</div>
+</body>
+</html>

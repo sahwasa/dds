@@ -27,17 +27,17 @@
     changeYear: true,
     dateFormat:"yy-mm-dd"
   });
-  $( "[dataformat='datepic']" ).datepicker({
+  $( ".datepic" ).datepicker({
     buttonText: "날짜를 선택해주세요."
   });
-  $( "[dataformat='from']" ).datepicker({
+  $( ".from" ).datepicker({
     buttonText: "시작날짜를 선택해주세요.",
     onClose: function( selectedDate ) {
       var getName=$(this).attr('name');
       $("input[name='"+ getName +"'].to").datepicker( "option", "minDate", selectedDate );
     }
   });
-  $( "[dataformat='to']" ).datepicker({
+  $( ".to" ).datepicker({
     buttonText: "종료날짜를 선택해주세요.",
     onClose: function( selectedDate ) {
       var getName=$(this).attr('name');
@@ -65,7 +65,6 @@
   $(".datetimepic").val( date_to_str(new Date()));
   // use jqueryui-timepicker-addon
   // https://trentrichardson.com/examples/timepicker/
-
   $(".datetimepic").datetimepicker({
     timeFormat: 'HH : mm : ss',
     controlType: 'select',
@@ -75,5 +74,20 @@
     this.setMinutes(this.getMinutes() + minutes);
     return this;
   };
+
+  // tab
+  $("#tabs").tabs();
+
+  // toggle
+  $('.btn_toggle').on('click',function(e){
+		e.preventDefault();
+		var cur = $(this).hasClass('on');
+		if($(this).attr('disabled') == 'disabled') return false;
+		if(cur){
+			$(this).addClass('off').removeClass('on');
+		}else{
+			$(this).addClass('on').removeClass('off');
+		}
+	})
 
 })(jQuery);
