@@ -1,0 +1,151 @@
+@@include('inc/top.html')
+<body>
+<div class="wrap">
+  @@include('inc/header.html')
+  <div id="cont" class="cont max_width">
+    @@include('inc/breadcrumb.html')
+    <div class="content_tit">
+      <h1>지진피해 신고하기</h1>
+    </div>
+    <div class="content_body declare d_dam01">
+      <div class="fl section">
+        <div class="tit blind">
+          <h2>선택정보</h2>
+        </div>
+        <!-- 좌측 메뉴 아코디언 -->
+        <div class="accordion felt01">
+          <div>
+            <h3>지진정보
+            <span class="btn_wrap">
+              <button type="button" class="btn btn_white">다른지진 선택</button>
+            </span>
+            </h3>
+            <div>
+              <dl class="flex_wrap eq_check">
+                <dt>진원시</dt>
+                <dd>2008-05-31 21:59:30.0</dd>
+                <dt>진원지</dt>
+                <dd>제주 제주시 서쪽 78㎞ 해역</dd>
+                <dt class="fix3">위도</dt>
+                <dd>38.82</dd>
+                <dt class="fix3">경도</dt>
+                <dd>125.65</dd>
+                <dt class="fix3">규모</dt>
+                <dd>4.2</dd>
+                <dt class="blind">gis</dt>
+                <dd>
+                  <img src="http://placehold.it/150x100" alt="">
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div>
+            <h3>신고인정보</h3>
+            <div>
+              <dl class="flex_wrap declarant_check">
+                <dt class="fix3">성명</dt>
+                <dd>홍**</dd>
+                <dt>연락처</dt>
+                <dd>010-1234-5678</dd>
+                <dt>개인정보수집 동의여부</dt>
+                <dd>동의함</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 신고인 정보 -->      
+      <div class="fr section declarant">      
+        <div class="tit">
+          <h2>신고인 정보</h2>
+        </div>
+        <div class="body">
+          <dl class="flex_wrap declarant_info dot_dt">
+            <dt><label for="">성명</label></dt>
+            <dd><input type="text"></dd>
+            <dt><label for="">연락처</label></dt>
+            <dd><input type="text"></dd>
+            <dt class="privacy">개인정보 수집 및 이용안내
+            <span class="fr">
+              <label for="agree"><input type="checkbox" name="" id="agree"> 동의</label>
+            </span>
+            </dt>
+            <dd class="privacy">
+              <div class="scroll">
+                <p>
+                https://www.privacy.go.kr/a3sc/per/inf/perInfStep01.do
+                만들어서 사용??
+                </p>
+                <h1>제1조 개인정보의 처리목적</h1>
+                <ol>
+                  <li>① 본 시스템은 대국민 서비스 제공 및 민원처리, 소관업무 수행 등의 목적으로 필요에 의한 최소한으로 개인정보를 처리하고 있습니다.</li>
+                </ol>
+              </div>
+            </dd>
+          </dl>
+          <div class="btn_bot">
+            <button type="button" class="btn btn_red">저장</button>
+          </div>
+        </div>
+      </div>
+      <!-- 신고인 정보__e -->
+      <!-- 신고내용 -->
+      <div class="fr section dam_cont">
+        <div class="tit">
+          <h2>신고내용</h2>
+        </div>
+        <div class="body">
+          <dl class="dot_dt dam_cont flex_wrap">
+            <dt class="required">피해유형</dt>
+            <dd>
+              <div class="ipt_wrap">
+                <label for=""><input type="checkbox" name="" id="">인명피해</label>
+                <label for=""><input type="checkbox" name="" id="">건물피해</label>
+                <label for=""><input type="checkbox" name="" id="">시설피해</label>
+              </div>
+            </dd>
+            <dt class="required">피해장소</dt>
+            <dd>
+              <input type="text"> <button type="button" class="btn btn_blue">우편번호</button>
+              <input type="text" class="full" title="주소1" readonly />
+              <input type="text" class="full" title="상세주소" placeholder="나머지 주소를 입력하세요." />
+            </dd>
+            <dt>현장사진</dt>
+            <dd>
+              
+            </dd>
+            <dt>파일첨부</dt>
+            <dd>
+            </dd>
+            <dt><label for="">내용</label></dt>
+            <dd>
+              <textarea name="" id="" cols="30" rows="5" class="full"></textarea>              
+            </dd>
+            <dt><label for="">비밀번호</label></dt>
+            <dd><input type="password"></dd>
+            <dt><label for="">확인</label></dt>
+            <dd><input type="password"></dd>
+          </dl>
+          <div class="btn_bot">
+            <button type="button" class="btn btn_red">저장</button>
+          </div>
+        </div>
+      </div>
+      <!-- 신고내용__e -->
+      <!-- 완료 -->
+      <div class="fr section fin">
+        <p>
+          피해접수 신고가 완료되었습니다.<br />
+          신고해주셔서 감사합니다.
+        </p>
+        <div class="btn_bot">
+          <a href="#" class="btn btn_red">지진피해 신고이력 바로가기</a>
+        </div>
+      </div>
+      <!-- 완료__e -->
+    </div>
+  </div>
+  @@include('inc/footer.html')
+</div>
+</body>
+</html>

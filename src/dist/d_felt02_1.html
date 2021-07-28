@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/pop.css" />
+  </head>
+<body>
+<div class="wrap">
+  <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="main.html">dds</a> 
+    </span>        
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav">
+        <li><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
+            <li><a href="eqinfo02.html">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li class="on"><a href="felt01.html">지진유감신고</a>
+          <ul class="sub">
+            <li class="on"><a href="felt01.html">지진유감 신고하기</a></li>
+            <li><a href="felt02.html">지진유감 신고이력</a></li>
+            <li><a href="felt03.html">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="dam01.html">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="dam01.html">지진피해 신고하기</a></li>
+            <li><a href="dam02.html">지진피해 신고이력</a></li>
+            <li><a href="dam03.html">부산 지진피해 위험요인</a></li>
+          </ul>
+        </li>
+        <li><a href="case01.html">지진위험성분석</a>
+          <ul class="sub">
+            <li><a href="case01.html">지진대비 필요성</a></li>
+            <li><a href="case02.html">부산 지진위험성 분석</a></li>
+            <li><a href="case03.html">지진피해대응</a></li>
+            <li><a href="case04.html">관련사이트</a></li>
+            <li><a href="case05.html">국외 지진피해사례</a></li>
+            <li><a href="case06.html">국내 지진피해사례</a></li>
+            <li><a href="case07.html">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="admin01.html">관리자지원</a>
+          <ul class="sub">
+            <li><a href="admin01.html">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div id="cont" class="cont max_width">
+    <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
+    <div class="content_tit">
+      <h1>지진유감 신고이력</h1>
+    </div>
+    <div class="content_body d_felt02_1">
+      <div class="fl section">
+        <div class="tit">
+          <h2>알 수  없는 이벤트 목록</h2>
+          <span class="fr">
+            <button type="button" class="btn btn_blueline">뒤로가기</button>
+          </span>
+        </div>
+        <div class="body">
+          <div class="search">
+            <ul class="use_grid">
+              <li><label for="">신고일자</label>
+                <span class="period_multi">
+                  <input type="text" class="date from" title="신고일자 시작범위" name="d_date" />
+                  <input type="text" class="date to" title="신고일자 종료범위" name="d_date" />
+                </span>
+              </li>            
+            </ul>
+            <span class="act_search">
+              <button type="button" class="btn btn_mint">검색</button>
+            </span>
+          </div>
+          <div class="tbl_wrap">
+            <div class="tbl_areaT">
+              <span class="count">
+                <b>건수</b>193건            
+              </span>
+            </div>
+            <table class="tbl_default">
+              <thead>
+                <tr>
+                  <th id="th1" width="80">이벤트번호</th>
+                  <th id="th2" width="150">등록시각</th>
+                  <th id="th3">신고건 수</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="tbl_scroll" style="height:481px;">
+              <table class="tbl_default tbl_hover">
+                <tbody>
+                  <tr class="on">
+                    <td width="80" headers="th1">1</td>
+                    <td width="150" headers="th2">2021-07-27 12:34:56</td>
+                    <td headers="th3">1</td>
+                  </tr>
+                  <tr>
+                    <td width="80" headers="th1">2</td>
+                    <td width="150" headers="th2">2021-07-27 12:34:56</td>
+                    <td headers="th3">1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="fr section">      
+        <div class="tit">
+          <h2>상세내용</h2>
+        </div>
+        <div class="tbl_wrap">          
+          <table class="tbl_default tbl_sub">
+            <thead>
+              <tr>
+                <th id="th1" width="80">신고인</th>
+                <th id="th2" width="110">연락처</th>
+                <th id="th3">신고지역</th>
+                <th id="th4" width="100">유감진도</th>
+                <th id="th5" width="150">신고일자</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="tbl_scroll" style="height:100px;">
+            <table class="tbl_default tbl_sub tbl_hover">
+              <tbody>
+                <tr class="on">
+                  <td width="80" headers="th1">홍길동1</td>
+                  <td width="110" headers="th2">010-1237-5679</td>
+                  <td headers="th3" class="alignL">부산시 중구 00동</td>
+                  <td width="100" headers="th3">Ⅲ</td>
+                  <td width="133" headers="th4">2021-07-27 12:34:56</td>
+                </tr>
+                <tr>
+                  <td width="80" headers="th1">홍길동1</td>
+                  <td width="110" headers="th2">010-1237-5679</td>
+                  <td headers="th3" class="alignL">부산시 중구 00동</td>
+                  <td width="100" headers="th3">Ⅲ</td>
+                  <td width="133" headers="th4">2021-07-27 12:34:56</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="section linked_t">
+          <!-- 지진 유감 신고시 입력한 상세 내용 표기 -->
+          <!-- 지진유감 신고시 상세내용에 대한 항목 정의 필요   (에트리 제공 요청) -->
+          <div class="scroll">
+            <dl class="dot_dt area_info">
+              <dt>지진진동을 감지한 장소</dt>
+              <dd>
+                <div class="ipt_wrap">
+                  <select name="" id="">
+                    <option value="">건물안</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">단독주택</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">건물층 수</option>
+                  </select>
+                  <input type="text" placeholder="상세">
+                </div>
+              </dd>
+              <dt><label for="">주변사람도 진동을 감지하였습니까?</label></dt>
+              <dd>
+                <select name="" id="">
+                  <option value="">혼자</option>
+                  <option value="">대부분</option>
+                  <option value="">모두</option>
+                </select>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>
+<script src="../../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../../js/ui_common.js"></script>
+</div>
+</body>
+</html>
