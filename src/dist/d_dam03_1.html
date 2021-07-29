@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/pop.css" />
   </head>
+<body>
 <div class="wrap">
-  <div class="header">
-    <!-- 바로가기 메뉴 -->
+  <!-- 바로가기 메뉴 -->
 <div id="accessibility">
   <a href="#cont" tabindex="0">본문 바로가기</a>
   <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
@@ -50,7 +50,7 @@
           <ul class="sub">
             <li><a href="dam01.html">지진피해 신고하기</a></li>
             <li><a href="dam02.html">지진피해 신고이력</a></li>
-            <li><a href="dam03.html">부산 지진피해 위험요인</a></li>
+            <li><a href="dam03.html">지진피해 신고집계</a></li>
           </ul>
         </li>
         <li><a href="case01.html">지진위험성분석</a>
@@ -73,23 +73,98 @@
     </div>
   </div>
 </div>
-  </div>
-<div class="pop_overlay">
-  <div class="pop_wrap p_cmmn02_1_1">
-    <div class="pop_tit">
-      <h1>내정보</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+  <div id="cont" class="cont max_width">
+    <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
+    <div class="content_tit">
+      <h1>지진피해 신고집계</h1>
     </div>
-    <div class="pop_body">
-      <img src="https://via.placeholder.com/500.jpg" alt="임시 이미지입니다.">
-      <div class="btn_wrap">
-        <button type="button" class="btn btn_r btn_mint">저장</button>
-        <button type="button" class="btn btn_r btn_pink">취소</button>
+    <div class="content_body declare d_dam03_1">
+      <div class="fl section">
+        <!-- 좌측 메뉴 아코디언 -->
+        <div class="accordion">
+          <div>
+            <h3>지진정보
+            <span class="btn_wrap">
+              <button type="button" class="btn btn_white">다른지진 선택</button>
+            </span>
+            </h3>
+            <div>
+              <dl class="flex_wrap eq_check">
+                <dt>진원시</dt>
+                <dd>2008-05-31 21:59:30.0</dd>
+                <dt>진원지</dt>
+                <dd>제주 제주시 서쪽 78㎞ 해역</dd>
+                <dt class="fix3">위도</dt>
+                <dd>38.82</dd>
+                <dt class="fix3">경도</dt>
+                <dd>125.65</dd>
+                <dt class="fix3">규모</dt>
+                <dd>4.2</dd>
+                <dt class="blind">gis</dt>
+                <dd>
+                  <img src="http://placehold.it/150x100" alt="">
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fr section">
+        <div class="flex_wrap f_sb">
+          <div class="fl section">              
+            <div class="gis_wrap">
+              <img src="http://placehold.it/398x500" alt="gis 영역">
+              <i class="declarant" style="left:52px;top:295px;">신고자위치</i>
+              <i class="declarant" style="left:102px;top:195px;">신고자위치</i>
+              <i class="declarant" style="left:182px;top:295px;">신고자위치</i>
+            </div>      
+          </div>
+          <div class="fr section">      
+            <div class="tit">
+              <h2>지역별 지진피해 신고집계</h2>
+              <span class="fr radio_wrap">
+                <label for=""><input type="radio" name="" id="" checked>구 단위</label>
+                <label for=""><input type="radio" name="" id="">동 단위</label>
+              </span>
+            </div>
+            <div class="tbl_wrap">
+              <table class="tbl_default">
+                <thead>
+                  <tr>
+                    <th scope="col" width="180">신고지역</th>
+                    <th scope="col" width="60">계기진도</th>
+                    <th scope="col" width="60">유감진도</th>
+                    <th scope="col" width="60">신고건수</th>
+                    <th scope="col">거리</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="tbl_scroll" style="height:438px;">
+                <table class="tbl_default tbl_hover">
+                  <tbody>
+                    <tr>
+                      <td width="180" class="alignL">-</td>
+                      <td width="60">-</td>
+                      <td width="60">-</td>
+                      <td width="60">-</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="footer min_width">
+  <div class="footer min_width">
   <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
   <div class="copy_wrap max_width">
     <p class="copyright">

@@ -7,7 +7,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
     <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
     <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -82,9 +81,9 @@
   </ul>
 </div>
     <div class="content_tit">
-      <h1>지진유감 신고하기</h1>
+      <h1>지진피해 신고이력</h1>
     </div>
-    <div class="content_body declare d_flet01">
+    <div class="content_body declare d_dam02_2">
       <div class="fl section">
         <div class="tit blind">
           <h2>선택정보</h2>
@@ -117,7 +116,11 @@
             </div>
           </div>
           <div>
-            <h3>신고인정보</h3>
+            <h3>신고인정보
+              <span class="btn_wrap">
+                <button type="button" class="btn btn_white">수정</button>
+              </span>
+            </h3>
             <div>
               <dl class="flex_wrap declarant_check">
                 <dt class="fix3">성명</dt>
@@ -129,17 +132,13 @@
               </dl>
             </div>
           </div>
-          <div>
-            <h3>지역정보</h3>
-            <div>
-              <dl class="flex_wrap area_check">
-                <dt>감지시각</dt>
-                <dd>2021-07-27 11:12:34</dd>
-                <dt>위치정보</dt>
-                <dd>부산시 중구 창선동</dd>
-              </dl>
-            </div>
-          </div>
+        </div>
+        <div class="alignR">
+          <button type="button" class="btn btn_gray">저장</button>
+          <button type="button" class="btn btn_gray">취소</button>
+          <span class="divideL">
+            <button type="button" class="btn btn_blueline">목록</button>
+          </span>
         </div>
       </div>
       <!-- 신고인 정보 -->      
@@ -177,124 +176,173 @@
         </div>
       </div>
       <!-- 신고인 정보__e -->
-      <!-- 지역정보 -->
-      <div class="fr section area">
+      <!-- 신고내용 -->
+      <div class="fr section dam_cont">
         <div class="tit">
-          <h2>지역정보</h2>
+          <h2>신고내용</h2>
         </div>
         <div class="body">
-          <dl class="dot_dt area_info">
-            <dt>지진진동을 느끼셨습니까?</dt>
+          <dl class="dot_dt dam_list flex_wrap">
+            <dt class="required">피해유형</dt>
             <dd>
               <div class="ipt_wrap">
-                <label for=""><input type="radio" name="" id="">예</label>
-                <label for=""><input type="radio" name="" id="">아니오</label>
+                <label for=""><input type="checkbox" name="" id="">인명피해</label>
+                <label for=""><input type="checkbox" name="" id="">건물피해</label>
+                <label for=""><input type="checkbox" name="" id="">시설피해</label>
               </div>
             </dd>
-            <dt>지진감지 시각</dt>
+            <dt class="required">피해장소</dt>
+            <dd class="addr">
+              <input type="text"> <button type="button" class="btn btn_blueline">우편번호</button>
+              <input type="text" class="full marginT5" title="주소1" readonly />
+              <input type="text" class="full marginT5" title="상세주소" placeholder="나머지 주소를 입력하세요." />
+            </dd>
+            <dt>현장사진</dt>
             <dd>
-              <div class="ipt_wrap">
-                <input type="text"  class="datetimepicker datetimepic" title="지진감지 시각"/>
-                <label for=""><input type="radio" name="" id="" /> 기억안남</label>
-              </div>
+              <ul class="attach_list">
+                <li>
+                  <input type="text" id="" name="" class="file_text filePath" readonly role="filePath" title="첨부파일 경로" />
+                  <span class="file_wrap btn btn_blueline">
+                    찾아보기
+                    <input type="file" class="file_add fileAdd"/>
+                  </span>
+                  <button type="button" class="btn btn_redline">삭제</button>
+                  <input type="text" name="" id="" class="full" title="이미지 설명" placeholder="이미지 설명을 입력해주세요.">
+                </li>
+                <li>
+                  <input type="text" id="" name="" class="file_text filePath" readonly role="filePath" title="첨부파일 경로" />
+                  <span class="file_wrap btn btn_blueline">
+                    찾아보기
+                    <input type="file" class="file_add fileAdd"/>
+                  </span>
+                  <button type="button" class="btn btn_redline">삭제</button>
+                  <input type="text" name="" id="" class="full" title="이미지 설명" placeholder="이미지 설명을 입력해주세요.">
+                </li>
+                <li>
+                  <button type="button" class="btn btn_blue">사진추가</button>
+                </li>
+              </ul>
             </dd>
-            <dt>지진진동을 감지했을 때 지역을 선택해주세요.</dt>
+            <dt>파일첨부</dt>
             <dd>
-              <div class="ipt_wrap">
-                <select name="" id="">
-                  <option value="">부산광역시</option>
-                </select>
-                <select name="" id="">
-                  <option value="">시군구</option>
-                </select>
-                <select name="" id="">
-                  <option value="">읍면동</option>
-                </select>
-                <label for=""><input type="radio" name="" id="" /> 기억안남</label>
-              </div>
-              <div class="gis_wrap">
-                <span class="btn_wrap">
-                  <button class="btn axib axi_refresh">현위치</button>
-                </span>
-                <img src="http://placehold.it/400x250" alt="">
-              </div>
+              
+              <ul class="attach_list">
+                <!-- <li>
+                  <input type="text" id="" name="" class="file_text filePath" readonly role="filePath" title="첨부파일 경로" />
+                  <span class="file_wrap btn btn_blueline">
+                    찾아보기
+                    <input type="file" class="file_add fileAdd"/>
+                  </span>
+                  <button type="button" class="btn btn_redline">삭제</button>
+                  <input type="text" name="" id="" class="full" title="파일 설명" placeholder="파일 설명을 입력해주세요.">
+                </li> -->
+                <li>
+                  <button type="button" class="btn btn_blue">파일추가</button>
+                </li>
+              </ul>
             </dd>
+            <dt class="required"><label for="">내용</label></dt>
+            <dd>
+              <textarea name="" id="" cols="30" rows="5" class="full"></textarea>              
+            </dd>
+            <dt class="required"><label for="">비밀번호 변경</label></dt>
+            <dd><input type="password"><span class="caution">신고 내용을 수정 및 삭제할 때 필요합니다.</span></dd>
+            <dt class="required"><label for="">확인</label></dt>
+            <dd><input type="password"></dd>
           </dl>
           <div class="btn_bot">
             <button type="button" class="btn btn_red">저장</button>
+            <button type="button" class="btn btn_gray">취소</button>
+            <span class="divideL">
+              <button type="button" class="btn btn_blueline">목록</button>
+            </span>
           </div>
         </div>
       </div>
-      <!-- 지역정보__e -->
-      <!-- 상세내용 -->
-      <!-- 지진유감 신고시 상세내용에 대한 항목 정의 필요   (에트리 제공 요청) -->
-      <div class="fr section dtl">
-        <div class="tit">
-          <h2>상세내용</h2>
-        </div>
-        <div class="body">
-          <div class="pageinfo section">
-            <h2>알림</h2>
-            <p>하기 양식은 모두 선택사항입니다. 설문에 응해주시면 진도를 계산하는 지도를 만드는데 도움이 됩니다.</p>
-          </div>
-          <dl class="dot_dt area_info">
-            <dt>지진진동을 감지한 장소</dt>
-            <dd>
-              <div class="ipt_wrap">
-                <select name="" id="">
-                  <option value="">건물안</option>
-                </select>
-                <select name="" id="">
-                  <option value="">단독주택</option>
-                </select>
-                <select name="" id="">
-                  <option value="">건물층 수</option>
-                </select>
-                <input type="text" placeholder="상세">
-              </div>
-            </dd>
-            <dt><label for="">주변사람도 진동을 감지하였습니까?</label></dt>
-            <dd>
-              <select name="" id="">
-                <option value="">혼자</option>
-                <option value="">대부분</option>
-                <option value="">모두</option>
-              </select>
-            </dd>
-            <dt>흔들림을 어느정도 느꼈습니까?</dt>
-            <dd>
-              <div calss="slider">
-                <label for="minbeds" class="blind">흔들림 정도</label>
-                <select name="minbeds" id="minbeds">
-                  <option>조명흔들림</option>
-                  <option>어항물흔들림</option>
-                  <option>창문흔들림</option>
-                  <option>자동차흔들림</option>
-                  <option>건물흔들림</option>
-                  <option>걷기어려움</option>
-                </select>
-              </div>
-            </dd>
-          </dl>
-          <div class="btn_bot">
-            <button type="button" class="btn btn_red">완료 및 제출</button>
-          </div>
-        </div>
-      </div>
-      <!-- 상세내용__e -->
-      <!-- 완료 -->
-      <div class="fr section fin">
-        <p>
-          지진유감 신고 입력이 완료되었습니다.<br />
-          신고해주셔서 감사합니다.
-        </p>
-        <div class="btn_bot">
-          <a href="#" class="btn btn_red">지진유감 집계 바로가기</a>
-        </div>
-      </div>
-      <!-- 완료__e -->
+      <!-- 신고내용__e -->      
     </div>
   </div>
+  <!-- 지진선택팝업 -->
+<div class="pop_overlay">
+  <div class="pop_wrap p_eq_select">
+    <div class="pop_tit">
+      <h1>지진선택</h1>
+      <button type="button" class="btn_close pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="search">
+          <ul class="use_grid">
+            <li><label for="">구분</label>
+              <select name="" id="">
+                <option value="">국내</option>
+                <option value="">국외</option>
+              </select>
+            </li>            
+            <li class="input_s"><label for="">발생년도</label>
+              <input type="text" title="최소연도"/> ~ <input type="text" title="최대연도" /> 년
+            </li>            
+            <li class="input_s"><label for="">규모</label>
+              <input type="text" title="최소규모" /> ~ <input type="text" title="최대규모" />
+            </li>
+            <li><label for="">발생지역</label>
+              <input type="text" />
+            </li>
+          </ul>
+          <span class="act_search">
+            <button type="button" class="btn btn_mint">검색</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <div class="tbl_areaT">
+            <span class="count">
+              <b>건수</b>193건            
+            </span>
+          </div>
+          <table class="tbl_default">
+            <thead>
+              <tr>
+                <th id="p_th1" width="40">구분</th>
+                <th id="p_th2" width="150">발생시각</th>
+                <th id="p_th3" width="50">위도</th>
+                <th id="p_th4" width="50">경도</th>
+                <th id="p_th5" width="50">규모</th>
+                <th id="p_th6" >발생위치</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="tbl_scroll" style="height:289px;">
+            <table class="tbl_default tbl_hover">
+              <tbody>
+                <tr class="on">
+                  <td width="40" headers="p_th1">국내</td>
+                  <td width="150" headers="p_th2">2013-05-15 22:12:32</td>
+                  <td width="50" headers="p_th3">38.82</td>
+                  <td width="50" headers="p_th4">125.56</td>
+                  <td width="50" headers="p_th5">2.0</td>
+                  <td width="" headers="p_th6" class="alignL">경북 영덕군 북동쪽 24㎞ 해역</td>
+                </tr>
+                <tr>
+                  <td width="40" headers="p_th1">-</td>
+                  <td width="150" headers="p_th2">-</td>
+                  <td width="50" headers="p_th3">-</td>
+                  <td width="50" headers="p_th4">-</td>
+                  <td width="50" headers="p_th5">-</td>
+                  <td width="" headers="p_th6" class="alignL">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>      
+      <div class="btn_wrap">
+        <button type="button" class="btn btn_mint">확인</button>
+        <button type="button" class="btn btn_blueline pop_close">취소</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 지진선택팝업__e -->
   <div class="footer min_width">
   <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
   <div class="copy_wrap max_width">
@@ -308,25 +356,7 @@
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
-<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
-<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
 <script src="../js/ui_common.js"></script>
-  <script>
-  // slider (jquery-ui)
-    var select = $( "#minbeds" );
-    var slider = $( "<div id='slider'></div>" ).insertAfter( select ).slider({
-      min: 1,
-      max: 6,
-      range: "min",
-      value: select[ 0 ].selectedIndex + 1,
-      slide: function( event, ui ) {
-        select[ 0 ].selectedIndex = ui.value - 1;
-      }
-    });
-    $( "#minbeds" ).on( "change", function() {
-      slider.slider( "value", this.selectedIndex + 1 );
-    });
-</script>  
 </div>
 </body>
 </html>

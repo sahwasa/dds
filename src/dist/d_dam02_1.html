@@ -7,7 +7,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
     <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
     <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -82,18 +81,17 @@
   </ul>
 </div>
     <div class="content_tit">
-      <h1>지진유감 실시간집계</h1>
+      <h1>지진피해 신고하기</h1>
     </div>
-    <div class="content_body declare d_felt03_1">
+    <div class="content_body declare d_dam02_1">
       <div class="fl section">
+        <div class="tit blind">
+          <h2>선택정보</h2>
+        </div>
         <!-- 좌측 메뉴 아코디언 -->
         <div class="accordion felt01">
           <div>
-            <h3>지진정보
-            <span class="btn_wrap">
-              <button type="button" class="btn btn_white">다른지진 선택</button>
-            </span>
-            </h3>
+            <h3>지진정보</h3>
             <div>
               <dl class="flex_wrap eq_check">
                 <dt>진원시</dt>
@@ -113,66 +111,120 @@
               </dl>
             </div>
           </div>
+          <div>
+            <h3>신고인정보</h3>
+            <div>
+              <dl class="flex_wrap declarant_check">
+                <dt class="fix3">성명</dt>
+                <dd>홍**</dd>
+                <dt>연락처</dt>
+                <dd>010-1234-5678</dd>
+                <dt>개인정보수집 동의여부</dt>
+                <dd>동의함</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="alignR">
+          <button type="button" class="btn btn_gray">수정</button>
+          <button type="button" class="btn btn_gray">삭제</button>
+          <span class="divideL">
+            <button type="button" class="btn btn_blueline">목록</button>
+          </span>
+        </div>
+      </div>      
+      <!-- 신고내용 -->
+      <div class="fr section dam_cont">
+        <div class="tit">
+          <h2>신고내용</h2>
+        </div>
+        <div class="body">
+          <dl class="dot_dt dam_list flex_wrap">
+            <dt>피해유형</dt>
+            <dd>건물피해, 인명피해</dd>
+            <dt>피해장소</dt>
+            <dd class="addr">부산광역시 해운대구 00동 00아파트 00동 00호</dd>
+            <dt>현장사진</dt>
+            <dd>
+              <ul class="attached_photo flex_wrap">
+                <li>
+                  <div class="figure_wrap">
+                    <img src="http://placehold.it/300x230" alt="">
+                  </div>
+                  <p>사진1설명</p>
+                </li>
+                <li>
+                  <div class="figure_wrap">
+                    <img src="http://placehold.it/230x300" alt="">
+                  </div>
+                  <p>사진2설명</p>
+                </li>
+                <li>
+                  <div class="figure_wrap">
+                    <img src="http://placehold.it/230x300" alt="">
+                  </div>
+                  <p>사진3설명</p>
+                </li>
+                <li>
+                  <div class="figure_wrap">
+                    <img src="http://placehold.it/300x230" alt="">
+                  </div>
+                  <p>사진4설명</p>
+                </li>
+              </ul>
+            </dd>
+            <dt>첨부파일</dt>
+            <dd>
+              <ul class="attached_file">
+                <li>
+                [공지사항] 재난유형 메뉴얼 공지사항.pdf
+                <span>111.81KB</span>
+                <button type="button" class="axi_only axi_down"></button>
+              </li>
+              <li>
+                현장피해 자료모음.pdf
+                <span>111.81KB</span>
+                <button type="button" class="axi_only axi_down"></button>
+              </li>
+              </ul>
+            </dd>
+            <dt><label for="">내용</label></dt>
+            <dd>
+              <textarea name="" id="" cols="30" rows="5" class="full" readonly></textarea>              
+            </dd>
+          </dl>
+          <div class="btn_bot">
+            <button type="button" class="btn btn_gray">수정</button>
+            <button type="button" class="btn btn_gray">삭제</button>
+            <span class="divideL">
+              <button type="button" class="btn btn_blueline">목록</button>
+            </span>
+          </div>
         </div>
       </div>
-      <div class="fr section">
-        <div id="tabs">
-          <ul>
-            <li><a href="#tabs-1">지역별</a></li>
-            <li><a href="#tabs-2">응답시간</a></li>
-          </ul>
-          <div id="tabs-1" class="tab_cont flex_wrap">
-            <div class="fl section">              
-              <div class="gis_wrap">
-                <img src="http://placehold.it/398x500" alt="gis 영역">
-                <i class="declarant" style="left:52px;top:295px;">신고자위치</i>
-                <i class="declarant" style="left:102px;top:195px;">신고자위치</i>
-                <i class="declarant" style="left:182px;top:295px;">신고자위치</i>
-              </div>      
-            </div>
-            <div class="fr section">      
-              <div class="tit">
-                <h2>지역별 지진유감 집계</h2>
-                <span class="fr radio_wrap">
-                  <label for=""><input type="radio" name="" id="" checked>구 단위</label>
-                  <label for=""><input type="radio" name="" id="">동 단위</label>
-                </span>
-              </div>
-              <div class="tbl_wrap">
-                <table class="tbl_default">
-                  <thead>
-                    <tr>
-                      <th scope="col" width="180">신고지역</th>
-                      <th scope="col" width="60">계기진도</th>
-                      <th scope="col" width="60">유감진도</th>
-                      <th scope="col" width="60">신고건수</th>
-                      <th scope="col">거리</th>
-                    </tr>
-                  </thead>
-                </table>
-                <div class="tbl_scroll" style="height:445px;">
-                  <table class="tbl_default tbl_hover">
-                    <tbody>
-                      <tr>
-                        <td width="180" class="alignL">-</td>
-                        <td width="60">-</td>
-                        <td width="60">-</td>
-                        <td width="60">-</td>
-                        <td>-</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="tabs-2" class="tab_cont">
-            <!-- 차트영역 -->
-          </div>
-        </div>
+      <!-- 신고내용__e -->
+    </div>
+  </div>
+  <!-- 본인인증팝업 -->
+<div class="pop_overlay">
+  <div class="pop_wrap p_vertification">
+    <div class="pop_tit">
+      <h1>인증</h1>
+      <button type="button" class="btn_close pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont pop_info">
+        <p>해당글을 수정하시려면 작성시 설정한 암호를 입력해주세요.</p>
+        <input type="password" class="full" title="암호" />
+      </div>      
+      <div class="btn_wrap">
+        <button type="button" class="btn btn_mint">확인</button>
+        <button type="button" class="btn btn_blueline pop_close">취소</button>
       </div>
     </div>
   </div>
+</div>
+<!-- 본인인증팝업__e -->
   <div class="footer min_width">
   <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
   <div class="copy_wrap max_width">
@@ -186,8 +238,6 @@
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
-<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
-<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
 <script src="../js/ui_common.js"></script>
 </div>
 </body>
