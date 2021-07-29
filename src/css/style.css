@@ -19,7 +19,7 @@
 .nav > li.on > a{background-color:#176899;font-family:'notokrM';color:#fff;border-color:transparent;}
 .sub{position:absolute;left:0;top:45px;width:calc(100% - 1px);max-height:0;background-color:#fff;overflow:hidden;}
 .nav > li:first-child .sub{left:1px;}
-.nav li:hover .sub,
+.nav > li:hover .sub,
 .nav .focusing.sub{max-height:500px;border-top:1px solid #ccd2d7;border-bottom:1px solid #176899;box-shadow: 0 1px 2px rgba(0,0,0,.2);transition:max-height 1s;}
 .sub li:first-child{margin-top:10px;}
 .sub li:last-child{margin-bottom:10px;}
@@ -44,6 +44,7 @@
 /* search */
 .search{position:relative;border:0 solid #166293;border-width:1px 0;margin-bottom:20px;}
 .search ul{display:block;width:calc(100% - 70px);padding:5px 0 5px 0;overflow:hidden;}
+.search dd ul{width:100%;}
 .search > ul{padding-left:10px;}
 .search li{float:left;margin:0 10px 5px;}
 .search li button{vertical-align:middle;margin-left:5px;}
@@ -125,7 +126,9 @@
 .pageinfo::before{position:absolute;left:10px;top:50%; content:"\f1d3";font-family:'axicon';font-size:40px;transform:translateY(-50%);color:#82744d;}
 .map_area{position:relative;}
 .gis_wrap{position:relative;border:1px solid #19699a;overflow:hidden;}
+.declarant,
 .epicenter{position:absolute;width:19px;height:19px;transform:translate(-50%, -50%);background:url(../img/epicenter.png) 0 0 no-repeat;font-size:0;text-indent:-9999px;}
+.declarant{width:16px;height:21px;background-image:url(../img/ico_declarant.png);}
 .map_detail{position:absolute;width:260px;border-radius:5px;background-color:rgba(255,255,255,.7);box-shadow:1px -1px 2px rgba(0,0,0,.2);}
 .map_detail dl{display:flex;flex-wrap:wrap;padding:5px 10px;}
 .map_detail dt, .map_detail dd{display:inline-block;line-height:1;margin:5px 0;}
@@ -194,9 +197,11 @@
 
 /* felt */
 .felt01 > .fl,
-.felt02 > .fl{width:500px;}
+.felt02 > .fl,
+.felt03 > .fl{width:500px;}
 .felt02 > .fr,
-.felt01 > .fr{width:calc(100% - 520px);}
+.felt01 > .fr,
+.felt03 > .fr{width:calc(100% - 520px);}
 .d_felt02_1 > .fl{width:400px;}
 .d_felt02_1 > .fr{width:calc(100% - 420px);}
 .d_felt02_1 .linked_t .scroll{height:412px;padding:15px;background-color:#fff;border:1px solid #19699a;box-shadow:2px 2px 3px rgba(0,0,0,.2) inset;}
@@ -206,12 +211,35 @@
 
 /* dam */
 .dam01 > .fl,
-.dam02 > .fl{width:500px;}
+.dam02 > .fl,
+.dam03 > .fl{width:500px;}
+.dam01 > .fr,
 .dam02 > .fr,
-.dam01 > .fr{width:calc(100% - 520px);}
-
+.dam03 > .fr{width:calc(100% - 520px);}
+.d_dam03_1 .f_sb > .fl{width:400px;}
+.d_dam03_1 .f_sb > .fr{width:calc(100% - 420px);}
+.d_dam03_1 .gis_wrap{margin-top:0;}
+.dam_cont dt,
+.dam_cont dd{margin-top:15px;}
 .dam_cont dt{width:100px;}
 .dam_cont dd{width:calc(100% - 100px);}
+.dam_cont .btn{vertical-align:middle;}
+.dam_cont .marginT5,
+.attach_list .full{margin-top:5px;}
+.attach_list{counter-reset:attach_num;}
+.attach_list li{position:relative;margin-bottom:10px;padding-left:20px;}
+.attach_list li::before{position:absolute;left:3px;top:2px;counter-increment:attach_num;content:counter(attach_num)}
+.attach_list li:last-child::before{display:none;}
+.attach_list .btn{margin-top:1px;}
+.attached_photo{justify-content:space-between;margin-top:-10px;}
+.attached_photo li{width:49%;text-align:center;margin-top:10px;}
+.attached_photo .figure_wrap{display:flex;align-items:center;justify-content:center;height:250px;background-color:#f5f5f5;}
+.attached_photo img{max-width:100%;max-height:100%;}
+.attached_photo p{text-align:center;word-break:keep-all;margin-top:5px;}
+.attached_file{margin-top:-10px;}
+.attached_file li{margin-top:10px;}
+.attached_file span{margin:0 5px;color:#aaaaaa;}
+.attached_file .btn_file{position:relative;top:3px;}
 
 /* case */
 .relevant_site .ui-widget.ui-widget-content{border:transparent;}

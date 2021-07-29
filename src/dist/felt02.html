@@ -49,7 +49,7 @@
           <ul class="sub">
             <li><a href="dam01.html">지진피해 신고하기</a></li>
             <li><a href="dam02.html">지진피해 신고이력</a></li>
-            <li><a href="dam03.html">부산 지진피해 위험요인</a></li>
+            <li><a href="dam03.html">지진피해 신고집계</a></li>
           </ul>
         </li>
         <li><a href="case01.html">지진위험성분석</a>
@@ -86,7 +86,7 @@
     <div class="content_body felt02">
       <div class="fl section">
         <div class="tit">
-          <h2>GIS</h2>
+          <h2>지진정보</h2>
           <span class="fr">
             <button type="button" class="btn btn_blueline">다른지진 선택</button>
           </span>
@@ -106,11 +106,10 @@
               <td colspan="5" class="alignL">부산시 중구 00동 00</td>
             </tr>
           </table>
-
         </div>
         <div class="gis_wrap">
           <img src="http://placehold.it/500x536" alt="gis 영역">
-          <i class="epicenter" style="left:102px;top:295px;">진앙지</i>
+          <i class="declarant" style="left:102px;top:295px;">신고자위치</i>
           <div class="map_detail declarant_dtl" style="left:4px;top:120px;">
             <h1 class="blind">신고자 정보</h1>
             <dl>
@@ -198,6 +197,87 @@
       </div>
     </div>
   </div>
+  <!-- 지진선택팝업 -->
+<div class="pop_overlay">
+  <div class="pop_wrap p_eq_select">
+    <div class="pop_tit">
+      <h1>지진선택</h1>
+      <button type="button" class="btn_close pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="search">
+          <ul class="use_grid">
+            <li><label for="">구분</label>
+              <select name="" id="">
+                <option value="">국내</option>
+                <option value="">국외</option>
+              </select>
+            </li>            
+            <li class="input_s"><label for="">발생년도</label>
+              <input type="text" title="최소연도"/> ~ <input type="text" title="최대연도" /> 년
+            </li>            
+            <li class="input_s"><label for="">규모</label>
+              <input type="text" title="최소규모" /> ~ <input type="text" title="최대규모" />
+            </li>
+            <li><label for="">발생지역</label>
+              <input type="text" />
+            </li>
+          </ul>
+          <span class="act_search">
+            <button type="button" class="btn btn_mint">검색</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <div class="tbl_areaT">
+            <span class="count">
+              <b>건수</b>193건            
+            </span>
+          </div>
+          <table class="tbl_default">
+            <thead>
+              <tr>
+                <th id="p_th1" width="40">구분</th>
+                <th id="p_th2" width="150">발생시각</th>
+                <th id="p_th3" width="50">위도</th>
+                <th id="p_th4" width="50">경도</th>
+                <th id="p_th5" width="50">규모</th>
+                <th id="p_th6" >발생위치</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="tbl_scroll" style="height:289px;">
+            <table class="tbl_default tbl_hover">
+              <tbody>
+                <tr class="on">
+                  <td width="40" headers="p_th1">국내</td>
+                  <td width="150" headers="p_th2">2013-05-15 22:12:32</td>
+                  <td width="50" headers="p_th3">38.82</td>
+                  <td width="50" headers="p_th4">125.56</td>
+                  <td width="50" headers="p_th5">2.0</td>
+                  <td width="" headers="p_th6" class="alignL">경북 영덕군 북동쪽 24㎞ 해역</td>
+                </tr>
+                <tr>
+                  <td width="40" headers="p_th1">-</td>
+                  <td width="150" headers="p_th2">-</td>
+                  <td width="50" headers="p_th3">-</td>
+                  <td width="50" headers="p_th4">-</td>
+                  <td width="50" headers="p_th5">-</td>
+                  <td width="" headers="p_th6" class="alignL">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>      
+      <div class="btn_wrap">
+        <button type="button" class="btn btn_mint">확인</button>
+        <button type="button" class="btn btn_blueline pop_close">취소</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 지진선택팝업__e -->
   <div class="footer min_width">
   <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
   <div class="copy_wrap max_width">

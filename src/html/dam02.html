@@ -5,7 +5,7 @@
   <div id="cont" class="cont max_width">
     @@include('inc/breadcrumb.html')
     <div class="content_tit">
-      <h1>지진유감 신고이력</h1>
+      <h1>지진피해 신고이력</h1>
     </div>
     <div class="content_body felt02">
       <div class="fl section">
@@ -56,22 +56,32 @@
       <div class="fr section">      
         <div class="tit">
           <h2>신고이력</h2>
-          <span class="fr">
-            <button type="button" class="btn btn_blueline">알 수 없는 이벤트 신고이력</button>
-            <button type="button" class="btn btn_blueline">유감신고 일괄등록</button>
-          </span>
         </div>
         <div class="search">
-          <ul class="use_grid">
-            <li><label for="">신고일자</label>
+          <ul class="use_grid divide10">
+            <li class="w5"><label for="">신고일자</label>
               <span class="period_multi">
                 <input type="text" class="date from" title="신고일자 시작범위" name="d_date" />
                 <input type="text" class="date to" title="신고일자 종료범위" name="d_date" />
               </span>
-            </li>          
-            <li><label for="">신고지역</label>
-              <select name="" id="" title="시군구"><option value=""></option></select>
-              <select name="" id="" title="읍면동"><option value=""></option></select>
+            </li>
+            <li class="w5"><label for="">피해유형</label>
+              <select name="" id="">
+                <option value="">인명</option>
+                <option value="">건물</option>
+                <option value="">시설</option>
+              </select>
+            </li>     
+            <li class="w5"><label for="">신고지역</label>
+              <select name="" id="" title="시군구"><option value="">시군구</option></select>
+              <select name="" id="" title="읍면동"><option value="">읍면동</option></select>
+            </li>            
+            <li class="w5">
+              <label for="">검색어</label>
+              <select name="" id="">
+                <option value="">신고인</option>
+              </select>
+              <input type="text" title="검색어" placeholder="검색어" />
             </li>
           </ul>
           <span class="act_search">
@@ -90,38 +100,28 @@
           <table class="tbl_default">
             <thead>
               <tr>
-                <th id="th1" width="95">신고인</th>
-                <th id="th2" width="">신고지역</th>
-                <th id="th3" width="55">유감진도</th>
-                <th id="th4" width="55">계기진도</th>
-                <th id="th5" width="55">예측진도</th>
-                <th id="th6" width="80">신고일자</th>
-                <th id="th7" width="55">거리</th>
-                <th id="th8" width="85">유효성검증</th>
+                <th scope="col" width="95">신고인</th>
+                <th scope="col" width="100">피해유형</th>
+                <th scope="col" width="">피해장소</th>
+                <th scope="col" width="120">신고일자</th>
+                <th scope="col" width="55">상세보기</th>
               </tr>
             </thead>
+            <tbody>
+              <tr>
+                <td>홍길동<span>(010-1234-5678)</span></td>
+                <td>인명&sol;건물&sol;시설</td>
+                <td class="alignL">부산시 중구 00동</td>
+                <td>2013-05-15 22:12:32</td>
+                <td><button type="button" class="axi_only axi_dtl">상세</button></td>
+              </tr>
+            </tbody>
           </table>
-          <div class="tbl_scroll" style="height:481px;">
-            <table class="tbl_default tbl_hover">
-              <tbody>
-                <tr>
-                  <td width="95" headers="th1">홍길동<span>(010-1234-5678)</span></td>
-                  <td width="" headers="th2" class="alignL">부산시 중구 00동</td>
-                  <td width="55" headers="th3">Ⅲ</td>
-                  <td width="55" headers="th4">Ⅲ</td>
-                  <td width="55" headers="th5">Ⅲ</td>
-                  <td width="80" headers="th6">2013-05-15 22:12:32</td>
-                  <td width="55" headers="th7">15㎞</td>
-                  <td width="70" headers="th8"><button class="btn_toggle effect on"></button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          @@include('inc/paginate.html')
         </div>
       </div>
     </div>
   </div>
-  @@include('pop/p_eq_select.html')
   @@include('inc/footer.html')    
 </div>
 </body>

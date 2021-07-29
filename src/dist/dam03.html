@@ -81,92 +81,109 @@
   </ul>
 </div>
     <div class="content_tit">
-      <h1>지진유감 실시간집계</h1>
+      <h1>지진피해 신고집계</h1>
     </div>
-    <div class="content_body declare d_felt03_1">
-      <div class="fl section">
-        <!-- 좌측 메뉴 아코디언 -->
-        <div class="accordion felt01">
-          <div>
-            <h3>지진정보
-            <span class="btn_wrap">
-              <button type="button" class="btn btn_white">다른지진 선택</button>
-            </span>
-            </h3>
-            <div>
-              <dl class="flex_wrap eq_check">
-                <dt>진원시</dt>
-                <dd>2008-05-31 21:59:30.0</dd>
-                <dt>진원지</dt>
-                <dd>제주 제주시 서쪽 78㎞ 해역</dd>
-                <dt class="fix3">위도</dt>
-                <dd>38.82</dd>
-                <dt class="fix3">경도</dt>
-                <dd>125.65</dd>
-                <dt class="fix3">규모</dt>
-                <dd>4.2</dd>
-                <dt class="blind">gis</dt>
-                <dd>
-                  <img src="http://placehold.it/150x100" alt="">
-                </dd>
-              </dl>
-            </div>
-          </div>
-        </div>
+    <div class="content_body dam03">
+      <div class="pageinfo section">
+        <h2>지진피해 신고접수된 내용을 집계합니다.</h2>
+        <p>선택한 지진에 대한 신고내용이 실시간으로 집계 및 분석된 진도정보가 화면에 표출됩니다.</p>
       </div>
-      <div class="fr section">
-        <div id="tabs">
-          <ul>
-            <li><a href="#tabs-1">지역별</a></li>
-            <li><a href="#tabs-2">응답시간</a></li>
-          </ul>
-          <div id="tabs-1" class="tab_cont flex_wrap">
-            <div class="fl section">              
-              <div class="gis_wrap">
-                <img src="http://placehold.it/398x500" alt="gis 영역">
-                <i class="declarant" style="left:52px;top:295px;">신고자위치</i>
-                <i class="declarant" style="left:102px;top:195px;">신고자위치</i>
-                <i class="declarant" style="left:182px;top:295px;">신고자위치</i>
-              </div>      
-            </div>
-            <div class="fr section">      
-              <div class="tit">
-                <h2>지역별 지진유감 집계</h2>
-                <span class="fr radio_wrap">
-                  <label for=""><input type="radio" name="" id="" checked>구 단위</label>
-                  <label for=""><input type="radio" name="" id="">동 단위</label>
-                </span>
-              </div>
-              <div class="tbl_wrap">
-                <table class="tbl_default">
-                  <thead>
-                    <tr>
-                      <th scope="col" width="180">신고지역</th>
-                      <th scope="col" width="60">계기진도</th>
-                      <th scope="col" width="60">유감진도</th>
-                      <th scope="col" width="60">신고건수</th>
-                      <th scope="col">거리</th>
-                    </tr>
-                  </thead>
-                </table>
-                <div class="tbl_scroll" style="height:445px;">
-                  <table class="tbl_default tbl_hover">
-                    <tbody>
-                      <tr>
-                        <td width="180" class="alignL">-</td>
-                        <td width="60">-</td>
-                        <td width="60">-</td>
-                        <td width="60">-</td>
-                        <td>-</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+      <div class="fl section">
+        <div class="tit">
+          <h2>GIS</h2>
+        </div>
+        <div class="gis_wrap">
+          <img src="http://placehold.it/500x600" alt="gis 영역">
+          <i class="epicenter" style="left:102px;top:295px;">진앙지</i>
+          <div class="legend">
+  <ul>
+    <li class="mag7">8 ≤ M ＜ 9 </li>
+    <li class="mag6">7 ≤ M ＜ 8 </li>
+    <li class="mag5">6 ≤ M ＜ 7 </li>
+    <li class="mag4">5 ≤ M ＜ 6 </li>
+    <li class="mag3">4 ≤ M ＜ 5 </li>
+    <li class="mag2">3 ≤ M ＜ 4 </li>
+    <li class="mag1">2 ≤ M ＜ 3 </li>
+  </ul>
+</div>
+          <div class="map_detail" style="left:4px;top:200px;">
+            <h1 class="blind">지진정보</h1>
+            <dl>
+              <dt>진원시</dt>
+              <dd>2008-05-31 21:59:30.0</dd>
+              <dt>진원지</dt>
+              <dd>제주 제주시 서쪽 78㎞ 해역</dd>
+              <dt class="fix3">규모</dt>
+              <dd>4.2</dd>
+            </dl>
           </div>
-          <div id="tabs-2" class="tab_cont">
-            <!-- 차트영역 -->
+        </div>      
+      </div>
+      <div class="fr section">      
+        <div class="tit">
+          <h2>지진 발생목록</h2>
+        </div>
+        <div class="search">
+          <ul class="use_grid">
+            <li class="input_s"><label for="">발생년도</label>
+              <input type="text" title="최소연도"/> ~ <input type="text" title="최대연도" /> 년
+            </li>            
+            <li class="input_s"><label for="">규모</label>
+              <input type="text" title="최소규모" /> ~ <input type="text" title="최대규모" />
+            </li>
+            <li><label for="">발생지역</label>
+              <input type="text" />
+            </li>
+          </ul>
+          <span class="act_search">
+            <button type="button" class="btn btn_mint">검색</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <div class="tbl_areaT">
+            <span class="count">
+              <b>건수</b>193건            
+            </span>
+          </div>
+          <table class="tbl_default">
+            <thead>
+              <tr>
+                <th id="th1" width="40">구분</th>
+                <th id="th2" width="80">발생시각</th>
+                <th id="th3" width="50">위도</th>
+                <th id="th4" width="50">경도</th>
+                <th id="th5" width="50">규모</th>
+                <th id="th6" >발생위치</th>
+                <th id="th7" width="50">신고건수</th>
+                <th id="th8" width="60">집계</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="tbl_scroll" style="height:485px;">
+            <table class="tbl_default tbl_hover">
+              <tbody>
+                <tr>
+                  <td width="40" headers="th1">국내</td>
+                  <td width="80" headers="th2">2013-05-15 22:12:32</td>
+                  <td width="50" headers="th3">38.82</td>
+                  <td width="50" headers="th4">125.56</td>
+                  <td width="50" headers="th5">2.0</td>
+                  <td width="" headers="th6" class="alignL">경북 영덕군 북동쪽 24㎞ 해역</td>
+                  <td width="50" headers="th7">15</td>
+                  <td width="45" headers="th8"><button type="button" class="axi_only axi_dtl">상세</button></td>
+                </tr>
+                <tr>
+                  <td width="40" headers="th1">-</td>
+                  <td width="80" headers="th2">-</td>
+                  <td width="50" headers="th3">-</td>
+                  <td width="50" headers="th4">-</td>
+                  <td width="50" headers="th5">-</td>
+                  <td width="" headers="th6" class="alignL">-</td>
+                  <td width="50" headers="th7">-</td>
+                  <td width="45" headers="th8"><button type="button" class="axi_only axi_dtl">상세</button></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -185,7 +202,7 @@
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
-<script src="../js/ui_common.js"></script>
+<script src="../js/ui_common.js"></script>    
 </div>
 </body>
 </html>

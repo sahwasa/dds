@@ -81,58 +81,83 @@
   </ul>
 </div>
     <div class="content_tit">
-      <h1>지진유감 실시간 집계</h1>
+      <h1>지진피해 신고이력</h1>
     </div>
-    <div class="content_body felt03">
-      <div class="pageinfo section">
-        <h2>지진유감 신고내용을 실시간으로 집계합니다.</h2>
-        <p>선택한 지진에 대한 신고내용이 실시간으로 집계 및 분석된 진도정보가 화면에 표출됩니다.</p>
-      </div>
+    <div class="content_body felt02">
       <div class="fl section">
         <div class="tit">
-          <h2>GIS</h2>
+          <h2>지진정보</h2>
+          <span class="fr">
+            <button type="button" class="btn btn_blueline">다른지진 선택</button>
+          </span>
+        </div>
+        <div class="tbl_wrap">
+          <table class="tbl_row">
+            <tr>
+              <th scope="row">지진번호</th>
+              <td>2021070812</td>
+              <th scope="row">규모</th>
+              <td>2.6</td>
+              <th scope="row">발생시각</th>
+              <td>2021-07-27 12:34:45</td>
+            </tr>
+            <tr>
+              <th scope="row">발생위치</th>
+              <td colspan="5" class="alignL">부산시 중구 00동 00</td>
+            </tr>
+          </table>
         </div>
         <div class="gis_wrap">
-          <img src="http://placehold.it/500x600" alt="gis 영역">
-          <i class="epicenter" style="left:102px;top:295px;">진앙지</i>
-          <div class="legend">
-  <ul>
-    <li class="mag7">8 ≤ M ＜ 9 </li>
-    <li class="mag6">7 ≤ M ＜ 8 </li>
-    <li class="mag5">6 ≤ M ＜ 7 </li>
-    <li class="mag4">5 ≤ M ＜ 6 </li>
-    <li class="mag3">4 ≤ M ＜ 5 </li>
-    <li class="mag2">3 ≤ M ＜ 4 </li>
-    <li class="mag1">2 ≤ M ＜ 3 </li>
-  </ul>
-</div>
-          <div class="map_detail" style="left:4px;top:200px;">
-            <h1 class="blind">지진정보</h1>
+          <img src="http://placehold.it/500x536" alt="gis 영역">
+          <i class="declarant" style="left:102px;top:295px;">신고자위치</i>
+          <div class="map_detail declarant_dtl" style="left:4px;top:120px;">
+            <h1 class="blind">신고자 정보</h1>
             <dl>
-              <dt>진원시</dt>
-              <dd>2008-05-31 21:59:30.0</dd>
-              <dt>진원지</dt>
-              <dd>제주 제주시 서쪽 78㎞ 해역</dd>
-              <dt class="fix3">규모</dt>
-              <dd>4.2</dd>
+              <dt class="fix4">신고인</dt>
+              <dd>홍길동</dd>
+              <dt class="fix4">연락처</dt>
+              <dd>010-1234-5678</dd>
+              <dt>지진감지</dt>
+              <dd>예</dd>
+              <dt>감지시각</dt>
+              <dd>2021-07-27 12:34:56</dd>
+              <dt>위치정보</dt>
+              <dd>부산시 중구 남포동</dd>
+              <dt>감지장소</dt>
+              <dd>건물내부(단독주택)</dd>
             </dl>
           </div>
         </div>      
       </div>
       <div class="fr section">      
         <div class="tit">
-          <h2>지진 발생목록</h2>
+          <h2>신고이력</h2>
         </div>
         <div class="search">
-          <ul class="use_grid">
-            <li class="input_s"><label for="">발생년도</label>
-              <input type="text" title="최소연도"/> ~ <input type="text" title="최대연도" /> 년
-            </li>            
-            <li class="input_s"><label for="">규모</label>
-              <input type="text" title="최소규모" /> ~ <input type="text" title="최대규모" />
+          <ul class="use_grid divide10">
+            <li class="w5"><label for="">신고일자</label>
+              <span class="period_multi">
+                <input type="text" class="date from" title="신고일자 시작범위" name="d_date" />
+                <input type="text" class="date to" title="신고일자 종료범위" name="d_date" />
+              </span>
             </li>
-            <li><label for="">발생지역</label>
-              <input type="text" />
+            <li class="w5"><label for="">피해유형</label>
+              <select name="" id="">
+                <option value="">인명</option>
+                <option value="">건물</option>
+                <option value="">시설</option>
+              </select>
+            </li>     
+            <li class="w5"><label for="">신고지역</label>
+              <select name="" id="" title="시군구"><option value="">시군구</option></select>
+              <select name="" id="" title="읍면동"><option value="">읍면동</option></select>
+            </li>            
+            <li class="w5">
+              <label for="">검색어</label>
+              <select name="" id="">
+                <option value="">신고인</option>
+              </select>
+              <input type="text" title="검색어" placeholder="검색어" />
             </li>
           </ul>
           <span class="act_search">
@@ -144,47 +169,48 @@
             <span class="count">
               <b>건수</b>193건            
             </span>
+            <span class="fr">
+              <button type="button" class="btn btn_red">CSV 저장</button>
+            </span>
           </div>
           <table class="tbl_default">
             <thead>
               <tr>
-                <th id="th1" width="40">구분</th>
-                <th id="th2" width="80">발생시각</th>
-                <th id="th3" width="50">위도</th>
-                <th id="th4" width="50">경도</th>
-                <th id="th5" width="50">규모</th>
-                <th id="th6" >발생위치</th>
-                <th id="th7" width="50">신고건수</th>
-                <th id="th8" width="60">집계</th>
+                <th scope="col" width="95">신고인</th>
+                <th scope="col" width="100">피해유형</th>
+                <th scope="col" width="">피해장소</th>
+                <th scope="col" width="120">신고일자</th>
+                <th scope="col" width="55">상세보기</th>
               </tr>
             </thead>
+            <tbody>
+              <tr>
+                <td>홍길동<span>(010-1234-5678)</span></td>
+                <td>인명&sol;건물&sol;시설</td>
+                <td class="alignL">부산시 중구 00동</td>
+                <td>2013-05-15 22:12:32</td>
+                <td><button type="button" class="axi_only axi_dtl">상세</button></td>
+              </tr>
+            </tbody>
           </table>
-          <div class="tbl_scroll" style="height:485px;">
-            <table class="tbl_default tbl_hover">
-              <tbody>
-                <tr>
-                  <td width="40" headers="th1">국내</td>
-                  <td width="80" headers="th2">2013-05-15 22:12:32</td>
-                  <td width="50" headers="th3">38.82</td>
-                  <td width="50" headers="th4">125.56</td>
-                  <td width="50" headers="th5">2.0</td>
-                  <td width="" headers="th6" class="alignL">경북 영덕군 북동쪽 24㎞ 해역</td>
-                  <td width="50" headers="th7">15</td>
-                  <td width="45" headers="th8"><button type="button" class="axi_only axi_dtl">상세</button></td>
-                </tr>
-                <tr>
-                  <td width="40" headers="th1">-</td>
-                  <td width="80" headers="th2">-</td>
-                  <td width="50" headers="th3">-</td>
-                  <td width="50" headers="th4">-</td>
-                  <td width="50" headers="th5">-</td>
-                  <td width="" headers="th6" class="alignL">-</td>
-                  <td width="50" headers="th7">-</td>
-                  <td width="45" headers="th8"><button type="button" class="axi_only axi_dtl">상세</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <div class="paginate">
+    <a href="#" class="first" title="처음">〈〈</a>
+    <a href="#" class="pre" title="이전">〈</a>
+    <span>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <strong>6</strong>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">10</a>
+    </span>
+    <a href="#" class="next" title="다음">〉</a>
+    <a href="#" class="last" title="마지막">〉〉</a>
+</div>
         </div>
       </div>
     </div>
