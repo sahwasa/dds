@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
+    <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pop.css" />
+  </head>
+
+<body>
+  <div class="wrap">
+    <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="main.html">dds</a> 
+    </span>        
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav">
+        <li><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
+            <li><a href="eqinfo02.html">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li class="on"><a href="felt01.html">지진유감신고</a>
+          <ul class="sub">
+            <li class="on"><a href="felt01.html">지진유감 신고하기</a></li>
+            <li><a href="felt02.html">지진유감 신고이력</a></li>
+            <li><a href="felt03.html">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="dam01.html">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="dam01.html">지진피해 신고하기</a></li>
+            <li><a href="dam02.html">지진피해 신고이력</a></li>
+            <li><a href="dam03.html">부산 지진피해 위험요인</a></li>
+          </ul>
+        </li>
+        <li><a href="case01.html">지진위험성분석</a>
+          <ul class="sub">
+            <li><a href="case01.html">지진대비 필요성</a></li>
+            <li><a href="case02.html">부산 지진위험성 분석</a></li>
+            <li><a href="case03.html">지진피해대응</a></li>
+            <li><a href="case04.html">관련사이트</a></li>
+            <li><a href="case05.html">국외 지진피해사례</a></li>
+            <li><a href="case06.html">국내 지진피해사례</a></li>
+            <li><a href="case07.html">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="admin01.html">관리자지원</a>
+          <ul class="sub">
+            <li><a href="admin01.html">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div id="cont" class="cont max_width">
+      <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
+      <div class="content_body case01">
+        <div class="content_tit">
+          <h1>국내 지진피해 사례</h1>
+        </div>
+        <div>
+          <div>
+            <h2>국내 주요 지진</h2>
+            <div class="flex_wrap f_sb">
+              <div class="eq_map_wrap section_l">
+                <div class="eq_map">
+                  <img src="../img/img_map_case02.png" alt="국내 지도 이미지" usemap="#case01">
+                  <map name="case01">
+                    <area shape="circle" coords=“333,350,9” href="http://www.naver.com">
+                    <area shape="circle" coords=“365,443,9” href="http://www.google.com">
+                    <area shape="circle" coords=“365,465,9” href="#">
+                    <area shape="circle" coords=“367,485,9” href="#">
+                  </map>
+                </div>
+              </div>
+              <div class="info_damage section_r">
+                <ul>
+                  <li>
+                    <h3>오대산 대지진</h3>
+                    <dl>
+                      <dt>발생시각</dt>
+                      <dd>2007. 1. 20. 20:56</dd><br>
+                      <dt style="vertical-align:top;">위치</dt>
+                      <dd>산리쿠 해역<br>(북위 38.1도, 동경 142.9도, 오시카반도의 동남동 130㎞부근)</dd><br>
+                      <dt>규모</dt>
+                      <dd>M 9.1</dd><br>
+                      <dt>깊이</dt>
+                      <dd>24㎞</dd><br>
+                      <dt>최대진도</dt>
+                      <dd>Ⅵ</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <h4 class="ico_circle">주요 피해사례</h4>
+                    <dl>
+                      <dt>인명피해</dt>
+                      <dd>사망 19,533명, 실종 2,585</dd><br>
+                      <dt>재산피해</dt>
+                      <dd>전파 121,768채, 반파 280,160채, 일부 파손 744,396채</dd><br>
+                      <dt>기타피해</dt>
+                      <dd>지진해일로 인한 전원공급 중지로 후쿠시마현의 원자력발전소에서 방사능 누출 사고 발생</dd>
+                    </dl>
+                    <div>
+                      <ul>
+                        <li style="display:inline-block;">
+                          <img src="../img/img_case02_01.png" alt="금이 간 벽">
+                          <p style="display:block;">[지진해일 발생]<br>
+                            출처: 행정안전부,2018,2017 포항지진 백서, p.456
+                          </p>
+                        </li>
+                        <li style="display:inline-block;">
+                          <img src="../img/img_case02_02.png" alt="벽에 금이 가고 문이 부서진 집">
+                          <p style="display:block;">[지진해일 발생]<br>
+                            출처: 행정안전부,2018,2017 포항지진 백서, p.456
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <h4 class="ico_circle">관련자료</h4>
+                    <p><a href="#">오대산 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>
+<script src="../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
+<script src="../js/ui_common.js"></script>
+  </div>
+
+</body>
+
+</html>

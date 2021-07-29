@@ -90,4 +90,107 @@
 		}
 	})
 
+  // pop
+  var popBtn = $('[openpop]');
+  popBtn.on('click', function () {
+    var target = $(this).attr('openpop');
+    $('#' + target).show();
+  })
+  var closePop = $('[closePop]');
+  closePop.on('click', function () {
+    $(this).parents('.pop_overlay').hide();
+  })
+
+
+// admin01
+  var mydata = [
+    { 't1': '관리자', 't2': 'sysadmin', 't3': '홍길동', 't4': '경북도청', 't5': '', 't6': '', 't7': '2019-12-13', 't8': 'edit' },
+    { 't1': '사용자', 't2': '', 't3': '', 't4': '', 't5': '', 't6': '', 't7': '', 't8': 'edit' },
+    { 't1': '사용자', 't2': '', 't3': '', 't4': '', 't5': '', 't6': '', 't7': '', 't8': 'edit' },
+    { 't1': '', 't2': '', 't3': '', 't4': '', 't5': '', 't6': '', 't7': '', 't8': 'edit' },
+    { 't1': '', 't2': '', 't3': '', 't4': '', 't5': '', 't6': '', 't7': '', 't8': '' }
+  ]
+  $("#jqgrid").jqGrid({
+    data: mydata,
+    datatype: "local",
+    colModel: [
+      { label: '권한', name: 't1', width: 120 },
+      { label: '사용자ID', name: 't2', width: 100 },
+      { label: '사용자명', name: 't3', width: 100 },
+      { label: '소속기관', name: 't4', width: 100 },
+      { label: '부서', name: 't5', width: 70 },
+      { label: '직급', name: 't6', width: 70 },
+      { label: '등록일', name: 't7', width: 70 },
+      { label: '수정', name: 't8', width: 50, formatter:tblBtn }
+    ],
+    multiselect: true,
+    loadonce: true,
+    viewrecords: true,
+    width:1200,
+    height:300,
+    rowTotal: -1,
+    pager: '#jqgridPager'
+  });
+
+// tblBtn
+function tblBtn(cellValue, options, rowdata, action) {
+  var html, txt = "";
+  switch (cellValue) {
+    case "edit":
+      txt = "edit";
+      break;
+    case "del":
+      txt = "del";
+      break;
+    case "dtl":
+      txt = "dtl";
+      break;
+    case "down":
+      txt = "down";
+      break;
+    case "file":
+      txt = "file";
+      break;
+    default:
+      txt = "none";
+  }
+  html = '<button type="button" class="axi btn_' + txt + '"></button>';
+  return html;
+  }
+
+    $(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+		var li_id = $(this).attr('data-li');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+    
+		$('.eq_map_list li').removeClass('current');
+		$('.li-content').removeClass('current');
+
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+		$("#"+li_id).addClass('current');
+	})
+
+	$('.eq_map_list li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+		var li_id = $(this).attr('data-li');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+    
+		$('.eq_map_list li').removeClass('current');
+		$('.li-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+		$("#"+li_id).addClass('current');
+	})
+
+})
+
 })(jQuery);

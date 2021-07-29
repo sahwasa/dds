@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
+    <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pop.css" />
+  </head>
+<body>
+  <div class="wrap">
+    <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="main.html">dds</a> 
+    </span>        
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav">
+        <li><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
+            <li><a href="eqinfo02.html">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li class="on"><a href="felt01.html">지진유감신고</a>
+          <ul class="sub">
+            <li class="on"><a href="felt01.html">지진유감 신고하기</a></li>
+            <li><a href="felt02.html">지진유감 신고이력</a></li>
+            <li><a href="felt03.html">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="dam01.html">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="dam01.html">지진피해 신고하기</a></li>
+            <li><a href="dam02.html">지진피해 신고이력</a></li>
+            <li><a href="dam03.html">부산 지진피해 위험요인</a></li>
+          </ul>
+        </li>
+        <li><a href="case01.html">지진위험성분석</a>
+          <ul class="sub">
+            <li><a href="case01.html">지진대비 필요성</a></li>
+            <li><a href="case02.html">부산 지진위험성 분석</a></li>
+            <li><a href="case03.html">지진피해대응</a></li>
+            <li><a href="case04.html">관련사이트</a></li>
+            <li><a href="case05.html">국외 지진피해사례</a></li>
+            <li><a href="case06.html">국내 지진피해사례</a></li>
+            <li><a href="case07.html">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="admin01.html">관리자지원</a>
+          <ul class="sub">
+            <li><a href="admin01.html">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div id="cont" class="cont max_width">
+      <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
+      <div class="content_body case01">
+        <div class="content_tit">
+          <h1>국외 지진피해 사례</h1>
+        </div>
+        <div>
+          <div>
+            <h2>국외 주요 지진</h2>
+            <div class="flex_wrap f_sb">
+              <div class="eq_map_wrap section_l">
+                <div class="eq_map" style="position:relative;">
+                  <img src="../img/img_map_case01.png" alt="국외 지도 이미지" usemap="#case01">
+                  <ul class="tabs">
+                    <li class="tab_link current" data-tab="tab-1" data-li="li-1" style="top:158px;left:276px;">일본</li>
+                    <li class="tab_link" data-tab="tab-2" data-li="li-2" style="top:181px;left:257px;">구마모토</li>
+                    <li class="tab_link" data-tab="tab-3" data-li="li-3" style="top:158px;left:227px;">스촨성</li>
+                    <li class="tab_link" data-tab="tab-4" data-li="li-4" style="top:214px;left:227px;">슬라웨시</li>
+                    <li class="tab_link" data-tab="tab-5" data-li="li-5" style="top:175px;left:195px;">네팔</li>
+                    <li class="tab_link" data-tab="tab-6" data-li="li-6" style="top:165px;left:103px;">알바니아</li>
+                    <li class="tab_link" data-tab="tab-7" data-li="li-7" style="top:180px;left:116px;">에게해</li>
+                    <li class="tab_link" data-tab="tab-8" data-li="li-8" style="top:280px;left:311px;">케르마덱</li>
+                    <li class="tab_link" data-tab="tab-9" data-li="li-9" style="top:237px;left:465px;">페루</li>
+                    <li class="tab_link" data-tab="tab-10" data-li="li-10" style="top:197px;left:465px;">아이티</li>
+                  </ul>
+                </div>
+                <div class="eq_map_list">
+                  <h3>국외 주요 지진 진도값</h3>
+                  <ul class="northeast_asia flex_wrap">
+                    <li id="li-1" data-tab="tab-1" class="li-content current">
+                      <p>동일본 대지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-2" data-tab="tab-2" class="li-content">
+                      <p>일본 구마모토 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-3" data-tab="tab-3" class="li-content">
+                      <p>중국 쓰촨성 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-4" data-tab="tab-4" class="li-content">
+                      <p>슬라웨시 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-5" data-tab="tab-5" class="li-content">
+                      <p>네팔 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-6" data-tab="tab-6" class="li-content">
+                      <p>알바니아 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-7" data-tab="tab-7" class="li-content">
+                      <p>에게해 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-8" data-tab="tab-8" class="li-content">
+                      <p>케르마덱 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-9" data-tab="tab-9" class="li-content">
+                      <p>페루 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                    <li id="li-10" data-tab="tab-10" class="li-content">
+                      <p>아이티 지진</p>
+                      <span>Ⅶ</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info_damage section_r">
+                <div>
+                  <ul id="tab-1" class="tab-content current">
+                    <li>
+                      <h3>동일본 대지진</h3>
+                      <dl>
+                        <dt>발생시각</dt>
+                        <dd>2011.03.11. 14:46</dd><br>
+                        <dt style="vertical-align:top;">위치</dt>
+                        <dd>산리쿠 해역<br>(북위 38.1도, 동경 142.9도, 오시카반도의 동남동 130㎞부근)</dd><br>
+                        <dt>규모</dt>
+                        <dd>Mw 9.0</dd><br>
+                        <dt>깊이</dt>
+                        <dd>24㎞</dd><br>
+                        <dt>최대진도</dt>
+                        <dd>Ⅶ</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">주요 피해사례</h4>
+                      <dl>
+                        <dt>인명피해</dt>
+                        <dd>사망 19,533명, 실종 2,585명, 부상 6,230명</dd><br>
+                        <dt>재산피해</dt>
+                        <dd>전파 121,768채, 반파 280,160채, 일부 파손 744,396채</dd><br>
+                        <dt>기타피해</dt>
+                        <dd>지진해일로 인한 전원공급 중지로 후쿠시마현의 원자력발전소에서 방사능 누출 사고 발생</dd>
+                      </dl>
+                      <div>
+                        <ul>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_01.png" alt="주택가를 덮치는 해일">
+                            <p style="display:block;">[지진해일 발생]<br>
+                              출처: 행정안전부,2018,2017 포항지진 백서, p.456
+                            </p>
+                          </li>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_02.png" alt="불타는 후쿠시마 제 1원자력 발전소">
+                            <p style="display:block;">[산업시설 피해]<br>
+                              출처: 행정안전부,2018,2017 포항지진 백서, p.456
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">관련자료</h4>
+                      <p><a href="#">동일본 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                    </li>
+                  </ul>
+                  <ul id="tab-2" class="tab-content">
+                    <li>
+                      <h3>일본 구마모토지진</h3>
+                      <dl>
+                        <dt>발생시각</dt>
+                        <dd style="vertical-align:top;">① 2016.04.14. 21:26<br>② 2016.04.16. 01:25 (해일주의보 01:27~02:14)</dd><br>
+                        <dt style="vertical-align:top;">위치</dt>
+                        <dd>구마모토현 구마모토지방<br>(북위 32도 45.2분, 동경 130도 45.7분)</dd><br>
+                        <dt>규모</dt>
+                        <dd style="vertical-align:top;">① M 6.5 ② M 7.3</dd><br>
+                        <dt>깊이</dt>
+                        <dd style="vertical-align:top;">① 12㎞ ② 11㎞</dd><br>
+                        <dt>최대진도</dt>
+                        <dd>Ⅶ</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">주요 피해사례</h4>
+                      <dl>
+                        <dt>인명피해</dt>
+                        <dd>사망 225명, 부상 2,753명</dd><br>
+                        <dt>재산피해</dt>
+                        <dd>전파 8,697채, 반파 34,037채, 일부 파손 155,902채</dd><br>
+                        <dt>기타피해</dt>
+                        <dd>토석류 및 산사태 발생, 하천 제방 피해, 가스 공급 정지(10만5천호) 및 단수(44만 5857호)</dd>
+                      </dl>
+                      <div>
+                        <ul>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_03.png" alt="USGS COMMUNITY INTERNET INTENSITY MAP">
+                            <p style="display:block;white-space:normal;">[USGS COMMUNITY INTERNET INTENSITY MAP]<br>출처: <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us20005iis/dyfi/intensity">USGS</a></p>
+                          </li>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_04.png" alt="무너진 집">
+                            <p style="display:block;">[주택피해]<br>출처: <a href="https://ko.wikipedia.org/wiki/2016%EB%85%84_%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0_%EC%A7%80%EC%A7%84">위키백과</a>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">관련자료</h4>
+                      <p><a href="#">일본 구마모토 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                    </li>
+                  </ul>
+                  <ul id="tab-3" class="tab-content">
+                    <li>
+                      <h3>중국 쓰촨성 지진</h3>
+                      <dl>
+                        <dt>발생시각</dt>
+                        <dd>2008.05.12. 14:28</dd><br>
+                        <dt style="vertical-align:top;">위치</dt>
+                        <dd>중국 쓰촨성 지방<br>(북위 31.11도, 동경 103.33도, 중국 청두 북서쪽 90km 지점)</dd><br>
+                        <dt>규모</dt>
+                        <dd>M 8.0</dd><br>
+                        <dt>깊이</dt>
+                        <dd>10㎞</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">주요 피해사례</h4>
+                      <dl>
+                        <dt>인명피해</dt>
+                        <dd>사망 68,109명, 부상 364,552명, 실종 19,851명</dd><br>
+                        <dt>재산피해</dt>
+                        <dd>붕괴 500,000채 이상 (도시기능 상실)</dd><br>
+                        <dt>기타피해</dt>
+                        <dd>간선도로 등 교통마피 및 통신두절, 청두공항 폐쇄발전소 5곳과 변전소 6곳 붕괴(쓰촨성) 등</dd>
+                      </dl>
+                      <div>
+                        <ul>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_05.png" alt="USGS COMMUNITY INTERNET INTENSITY MAP">
+                            <p style="display:block;">[USGS COMMUNITY INTERNET INTENSITY MAP]<br>
+                              출처: <a href="https://earthquake.usgs.gov/earthquakes/eventpage/usp000g650/dyfi/intensity">USGS</a>
+                            </p>
+                          </li>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_06.png" alt="폐허가 되어버린 주택붕괴 전경">
+                            <p style="display:block;">[중국 쓰촨 주택붕괴 전경]<br>
+                              출처 : 행정안전부, 2018, 2017 포항지진 백서, p.344
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">관련자료</h4>
+                      <p><a href="#">중국 쓰촨성 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                    </li>
+                  </ul>
+                  <ul id="tab-4" class="tab-content">
+                    <li>
+                      <h3>2018 술라웨시 지진</h3>
+                      <dl>
+                        <dt>발생시각</dt>
+                        <dd>2018.09.28</dd><br>
+                        <dt style="vertical-align:top;">위치</dt>
+                        <dd>인도네시아 술라웨시섬<br>(남위 0.18도, 동경 119.84도)</dd><br>
+                        <dt>규모</dt>
+                        <dd>Mw 7.5</dd><br>
+                        <dt>깊이</dt>
+                        <dd>10㎞</dd><br>
+                        <dt>최대진도</dt>
+                        <dd>Ⅸ</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">주요 피해사례</h4>
+                      <dl>
+                        <dt>인명피해</dt>
+                        <dd>사망 2,256명, 부상 10,679명, 실종 1,075명 이상</dd><br>
+                        <dt>재산피해</dt>
+                        <dd>팔루 공항 관제탑 파손, 활주로에 400~500m 균열, 5개 발전소 가동 중단</dd><br>
+                        <dt>기타피해</dt>
+                        <dd>지진 및 쓰나미로 인해 일부 주택 유실, 사망자는 대부분 쓰나미에 의해 발생</dd>
+                      </dl>
+                      <div>
+                        <ul>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_07.png" alt="USGS COMMUNITY INTERNET INTENSITY MAP">
+                            <p style="display:block;">[USGS COMMUNITY INTERNET INTENSITY MAP]<br>
+                              출처: <a href="https://earthquake.usgs.gov/earthquakes/eventpage/usp000g650/dyfi/intensity">USGS</a>
+                            </p>
+                          </li>
+                          <li style="display:inline-block;">
+                            <img src="../img/img_case01_08.png" alt="폐허가 되어버린 주택붕괴 전경">
+                            <p style="display:block;">[중국 쓰촨 주택붕괴 전경]<br>
+                              출처 : 행정안전부, 2018, 2017 포항지진 백서, p.344
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <h4 class="ico_circle">관련자료</h4>
+                      <p><a href="#">중국 쓰촨성 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>
+<script src="../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
+<script src="../js/ui_common.js"></script>
+  </div>
+
+</body>
+
+</html>
