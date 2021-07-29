@@ -134,6 +134,7 @@ b{font-weight:normal;font-family:'notokrM';}
 .btn_hanblue{background-color:#377acd;color:#fff;border:none;}
 .btn_grayblue{background-color:#5b96ca;border-color:transparent; }
 .btn_blueline{color:#1c67b2;border-color:#1c67b2;}
+.btn_redline{color:#f7574d;border-color:#f7574d;}
 .btn_gray{background-color:#7f7d7e;border-color:#686868;}
 .ico_btn{background:transparent;border:none;font-size:0;overflow:hidden;}
 td .ico_btn{vertical-align:top;margin-top:3px;}
@@ -150,6 +151,7 @@ td .ico_btn{vertical-align:top;margin-top:3px;}
 .axi_refresh::before{content:"\f21c";color:#176899;font-size:11px;}
 .axi_search::before{content:"\f002";color:#fff;}
 .axi_del::before{content:"\e937";color:#f75b31;}
+.axi_down::before{content:"\e069"}
 .axi_back::before{content:"\e852";}
 .axi_dtl::before{content:"\f00e";color:#2e66aa;}
 .axi_tileView::before{content:"\e725";color:#666;}
@@ -173,8 +175,8 @@ td .ico_btn{vertical-align:top;margin-top:3px;}
 .btn_toggle.effect.off::after{content:"보류";}
 
 .file_text{float:left;width:380px;height:19px;}
-.file_wrap{display:inline-block;position:relative;width:60px;height:22px;margin-left:5px;cursor:pointer;}
-.file_add{filter:alpha(opacity:0);opacity:0;position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:24px;padding:0;border:0;cursor:pointer;}
+.file_wrap{display:inline-block;position:relative;width:60px;height:22px;margin:1px 0 0 5px;cursor:pointer;}
+.file_add{filter:alpha(opacity:0);opacity:0;position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:24px;padding:0;border:0;cursor:pointer;z-index:100;}
 
 .overlay{position:fixed;left:0;top:0;height:100%;background:rgba(0,0,0,.3);z-index:1000;}
 
@@ -182,7 +184,7 @@ td .ico_btn{vertical-align:top;margin-top:3px;}
 [required]::before,
 .required::after{content:" *";color:#f35857;font-size:11px;font-weight:600;}
 [required]::before{margin-right:5px;}
-input,
+input[type="text"],input[type="password"],
 select{padding:1px 5px 2px;box-sizing:border-box;height:25px;}
 select[multiple]{height:auto;}
 input[type="text"],
@@ -209,11 +211,13 @@ label input{margin-top:-3px;}
 .period label,
 .period input{vertical-align:top;}
 .period_multi{display:inline-flex;justify-content:space-between;align-items:center;position:relative;width:220px;}
-.period_multi::after{content:"~";position:absolute;left:50%;top:50%;margin:-10px 0 0 -5px;}
+.period_multi::after{content:"~";position:absolute;left:50%;top:50%;margin:-10px 0 0 -7px;}
 .period_multi .date{width:45%;}
 .period_multi .ui-datepicker-trigger{right:32px}
 
 .info{float:right;margin-top:5px;color:#999;font-size:11px;}
+.caution{margin-left:5px;color:#f35857;vertical-align:middle;}
+.caution::before{content:"※";margin-right:3px;}
 
 .linked_t{position:relative;margin-top:50px;}
 .linked_t::before{position:absolute;top:-40px;left:50%;content:"\f1af";font-family:'axicon';transform:translateX(-50%);font-size:30px;color:#176899;}
@@ -221,7 +225,7 @@ label input{margin-top:-3px;}
 /* usegrid */
 .use_grid{display:flex;flex-wrap:wrap;width:100%;}
 .use_grid li{flex:0 1 auto;float:none;}
-.search .use_grid{display:flex;margin:3px -10px 0;width:100%;}
+.search .use_grid{display:flex;margin:3px -10px 0;}
 .search .use_grid li{margin:0;padding:0 10px 3px;}
 
 .divide10 li{width:10%;}

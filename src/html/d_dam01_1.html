@@ -95,7 +95,7 @@
           <h2>신고내용</h2>
         </div>
         <div class="body">
-          <dl class="dot_dt dam_cont flex_wrap">
+          <dl class="dot_dt dam_list flex_wrap">
             <dt class="required">피해유형</dt>
             <dd>
               <div class="ipt_wrap">
@@ -105,29 +105,65 @@
               </div>
             </dd>
             <dt class="required">피해장소</dt>
-            <dd>
-              <input type="text"> <button type="button" class="btn btn_blue">우편번호</button>
-              <input type="text" class="full" title="주소1" readonly />
-              <input type="text" class="full" title="상세주소" placeholder="나머지 주소를 입력하세요." />
+            <dd class="addr">
+              <input type="text"> <button type="button" class="btn btn_blueline">우편번호</button>
+              <input type="text" class="full marginT5" title="주소1" readonly />
+              <input type="text" class="full marginT5" title="상세주소" placeholder="나머지 주소를 입력하세요." />
             </dd>
             <dt>현장사진</dt>
             <dd>
-              
+              <ul class="attach_list">
+                <li>
+                  <input type="text" id="" name="" class="file_text filePath" readonly role="filePath" title="첨부파일 경로" />
+                  <span class="file_wrap btn btn_blueline">
+                    찾아보기
+                    <input type="file" class="file_add fileAdd"/>
+                  </span>
+                  <button type="button" class="btn btn_redline">삭제</button>
+                  <input type="text" name="" id="" class="full" title="이미지 설명" placeholder="이미지 설명을 입력해주세요.">
+                </li>
+                <li>
+                  <input type="text" id="" name="" class="file_text filePath" readonly role="filePath" title="첨부파일 경로" />
+                  <span class="file_wrap btn btn_blueline">
+                    찾아보기
+                    <input type="file" class="file_add fileAdd"/>
+                  </span>
+                  <button type="button" class="btn btn_redline">삭제</button>
+                  <input type="text" name="" id="" class="full" title="이미지 설명" placeholder="이미지 설명을 입력해주세요.">
+                </li>
+                <li>
+                  <button type="button" class="btn btn_blue">사진추가</button>
+                </li>
+              </ul>
             </dd>
             <dt>파일첨부</dt>
             <dd>
+              <ul class="attach_list">
+                <!-- <li>
+                  <input type="text" id="" name="" class="file_text filePath" readonly role="filePath" title="첨부파일 경로" />
+                  <span class="file_wrap btn btn_blueline">
+                    찾아보기
+                    <input type="file" class="file_add fileAdd"/>
+                  </span>
+                  <button type="button" class="btn btn_redline">삭제</button>
+                  <input type="text" name="" id="" class="full" title="파일 설명" placeholder="파일 설명을 입력해주세요.">
+                </li> -->
+                <li>
+                  <button type="button" class="btn btn_blue">파일추가</button>
+                </li>
+              </ul>
             </dd>
-            <dt><label for="">내용</label></dt>
+            <dt class="required"><label for="">내용</label></dt>
             <dd>
               <textarea name="" id="" cols="30" rows="5" class="full"></textarea>              
             </dd>
-            <dt><label for="">비밀번호</label></dt>
-            <dd><input type="password"></dd>
-            <dt><label for="">확인</label></dt>
+            <dt class="required"><label for="">비밀번호</label></dt>
+            <dd><input type="password"><span class="caution">신고 내용을 수정 및 삭제할 때 필요합니다.</span></dd>
+            <dt class="required"><label for="">확인</label></dt>
             <dd><input type="password"></dd>
           </dl>
           <div class="btn_bot">
-            <button type="button" class="btn btn_red">저장</button>
+            <button type="button" class="btn btn_red">완료 및 제출</button>
           </div>
         </div>
       </div>

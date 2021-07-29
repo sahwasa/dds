@@ -1,14 +1,4 @@
 (function($){
-  $('.sub a').on({
-    focusin : function(){
-      $('.sub').removeClass('focusing');
-      $(this).parents('.sub').addClass('focusing');
-    },
-    focusout : function(){
-      // console.log($(this).parents('.sub').parent('li').eq())
-    }
-  })
-
   // accordion
   $( ".accordion > div" ).accordion({
     header : "h3",
@@ -88,6 +78,17 @@
 		}else{
 			$(this).addClass('on').removeClass('off');
 		}
-	})
+	});
+
+  /* fileDeco */
+  $('.fileAdd').on('change',function(){
+    var fileAdd = $(this);
+    fileAdd.parent('span').prev('.filePath').val(fileAdd.val());
+  });
+
+  // pop
+  $('.pop_close').on('click',function(){
+    $(this).parents('.pop_overlay').hide();
+  });
 
 })(jQuery);
