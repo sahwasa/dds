@@ -159,39 +159,13 @@ function tblBtn(cellValue, options, rowdata, action) {
   return html;
   }
 
-    $(document).ready(function(){
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
-		var li_id = $(this).attr('data-li');
-
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
-    
-		$('.eq_map_list li').removeClass('current');
-		$('.li-content').removeClass('current');
-
-
+  $('ul.eqtabs li, .eq_map_list li').on('click',function(){
+    var tab_id = $(this).attr('data_tab');
+		$('ul.eqtabs li, .eqtab_content, .eq_map_list li').removeClass('current');
 		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-		$("#"+li_id).addClass('current');
-	})
+		$("."+tab_id).addClass('current');
 
-	$('.eq_map_list li').click(function(){
-		var tab_id = $(this).attr('data-tab');
-		var li_id = $(this).attr('data-li');
-
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
-    
-		$('.eq_map_list li').removeClass('current');
-		$('.li-content').removeClass('current');
-
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-		$("#"+li_id).addClass('current');
-	})
-
-})
+    return false;
+  });
 
 })(jQuery);
