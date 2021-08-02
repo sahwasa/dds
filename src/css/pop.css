@@ -9,16 +9,10 @@
 .pop_body{margin:1px;padding:15px;text-align:left;}
 .pop_wrap .btn_wrap{text-align:center;margin-top:20px;}
 .pop_wrap .btn_wrap .btn{padding:2px 15px;}
-.pop_wrap table input[type = text], .pop_wrap table input[type = date], .pop_wrap table input[type = password], .pop_wrap table select, .pop_wrap table textarea{width:100%;}
-
-/* .pop_wrap .search.f_sb{justify-content:space-between;}
-.pop_wrap table{border:1px solid #d7d7d7;}
-.pop_wrap th{width:20%;}
-.pop_wrap .tbl_row th,
-.pop_wrap .tbl_row td{height:25px;padding:3px;border:1px solid #d7d7d7;}
-.pop_wrap table textarea{line-height:22px;}
-.pop_wrap table label{font-weight:600;}
-.tbl_info table,.tbl_info th,.tbl_info td{height:30px;padding:3px;background-color:transparent;border:1px solid transparent;} */
+.pop_wrap table input[type = text], .pop_wrap table input[type = date],
+.pop_wrap table input[type = password], .pop_wrap table select, .pop_wrap table textarea{width:100%;}
+.validity{color:#d22218;font-size:12px;}
+.pop_wrap .required_info{margin:0 0 10px;color:#f35857;}
 
 .pop_info{position:relative;padding-left:90px;}
 .pop_info::before{position:absolute;left:0; font-family:'axicon';content:'\f1d3';font-size:70px;color:#516875;}
@@ -26,6 +20,5 @@
 .p_vertification p{word-break:keep-all;text-align:left;margin-bottom:15px;}
 
 /* p_admin01 */
-.p_admin01 th{text-align:left;}
-.tbl_info table, .tbl_info th, .tbl_info td{padding:5px 3px;}
-.p_admin01 .required_info{margin:0 0 10px;color: #f35857;}
+.tbl_userinfo table, .tbl_userinfo th, .tbl_userinfo td{padding:5px 3px;vertical-align:top;text-align:left;}
+.tbl_userinfo .btn{line-height:21px;}
