@@ -1,11 +1,88 @@
-@@include('inc/top.html')
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
+    <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pop.css" />
+  </head>
 
 <body>
   <div class="wrap">
-    @@include('inc/header.html')
+    <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="main.html">dds</a> 
+    </span>        
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav">
+        <li><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
+            <li><a href="eqinfo02.html">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li class="on"><a href="felt01.html">지진유감신고</a>
+          <ul class="sub">
+            <li class="on"><a href="felt01.html">지진유감 신고하기</a></li>
+            <li><a href="felt02.html">지진유감 신고이력</a></li>
+            <li><a href="felt03.html">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="dam01.html">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="dam01.html">지진피해 신고하기</a></li>
+            <li><a href="dam02.html">지진피해 신고이력</a></li>
+            <li><a href="dam03.html">지진피해 신고집계</a></li>
+          </ul>
+        </li>
+        <li><a href="case01.html">지진위험성분석</a>
+          <ul class="sub">
+            <li><a href="case01.html">지진대비 필요성</a></li>
+            <li><a href="case02.html">부산 지진위험성 분석</a></li>
+            <li><a href="case03.html">지진피해대응</a></li>
+            <li><a href="case04.html">관련사이트</a></li>
+            <li><a href="case05.html">국외 지진피해사례</a></li>
+            <li><a href="case06.html">국내 지진피해사례</a></li>
+            <li><a href="case07.html">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="admin01.html">관리자지원</a>
+          <ul class="sub">
+            <li><a href="admin01.html">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
     <div id="cont" class="cont max_width">
-      @@include('inc/breadcrumb.html')
-      <div class="content_body case01">
+      <div class="breadcrumb">
+  <ul>
+    <li><a href="">HOME</a></li>
+    <li><a href="">1Deps</a></li>
+    <li>2Deps</li>
+  </ul>
+</div>
+      <div class="content_body case06">
         <div class="content_tit">
           <h1>국내 지진피해 사례</h1>
         </div>
@@ -15,7 +92,7 @@
             <div class="flex_wrap f_sb">
               <div class="eq_map_wrap section_l">
                 <div class="eq_map">
-                  <img src="../img/img_map_case02.png" alt="국내 지도 이미지">
+                  <img src="../img/img_map_case06.png" alt="국내 지도 이미지">
                   <ul class="eqtabs">
                     <li data_tab="eqtab_1" class="eqtab_1 current" style="top:341px;left:324px;"></li>
                     <li data_tab="eqtab_2" class="eqtab_2" style="top:434px;left:355px;"></li>
@@ -52,13 +129,13 @@
                     <div>
                       <ul class="case_img_wrap">
                         <li>
-                          <img src="../img/img_case02_01.png" alt="금이 간 벽">
+                          <img src="../img/img_case06_01.png" alt="금이 간 벽">
                           <p>[학교시설 피해]<br>
                             출처: 국민안전처, 2017년 5월, 9.12지진 백서, 339p
                           </p>
                         </li>
                         <li>
-                          <img src="../img/img_case02_02.png" alt="문이 부서진 우사 건물">
+                          <img src="../img/img_case06_02.png" alt="문이 부서진 우사 건물">
                           <p>[우사 건물 피해]<br>
                             출처: 국민안전처, 2017년 5월, 9.12지진 백서, 339p
                           </p>
@@ -99,12 +176,12 @@
                     <div>
                       <ul class="case_img_wrap">
                         <li>
-                          <img src="../img/img_case02_03.png" alt="벽면이 무너진 필로티 구조 건축물 피해 사진">
+                          <img src="../img/img_case06_03.png" alt="벽면이 무너진 필로티 구조 건축물 피해 사진">
                           <p>[필로티 구조 건축물 피해 사진]<br>출처: 행정안전부, 2018년 8월, 2017포항지진 백서
                           </p>
                         </li>
                         <li>
-                          <img src="../img/img_case02_04.png" alt="지진으로 인해 무너진 주택가의 골목">
+                          <img src="../img/img_case06_04.png" alt="지진으로 인해 무너진 주택가의 골목">
                           <p>[포항 지진 피해]<br>출처: <a
                               href="http://www.pmnews.co.kr/47297" target='_blank'>국토매일</a>
                           </p>
@@ -114,7 +191,7 @@
                   </li>
                   <li>
                     <h4 class="ico_circle">관련자료</h4>
-                    <p><a href="#">포항지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                    <p><a href="#">포항 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
                   </li>
                 </ul>
                 <ul class="eqtab_3 eqtab_content">
@@ -145,13 +222,13 @@
                     <div>
                       <ul class="case_img_wrap">
                         <li>
-                          <img src="../img/img_case02_05.png" alt="금이 간 벽">
+                          <img src="../img/img_case06_05.png" alt="금이 간 벽">
                           <p>[9.12 지진으로 인한 주택 파손]<br>
                             출처: 국민안전처, 2017년 5월, 9.12지진 백서
                           </p>
                         </li>
                         <li>
-                          <img src="../img/img_case02_06.png" alt="지진으로 굴러떨어진 바위에 부서진 경주시 건천읍 한 사찰 부속 건물">
+                          <img src="../img/img_case06_06.png" alt="지진으로 굴러떨어진 바위에 부서진 경주시 건천읍 한 사찰 부속 건물">
                           <p>[지진으로 인한 사찰 건물 파손]<br>
                             출처 : <a href="http://www.ksilbo.co.kr/news/articleView.html?idxno=558795" target='_blank'>경상일보</a>
                           </p>
@@ -161,7 +238,7 @@
                   </li>
                   <li>
                     <h4 class="ico_circle">관련자료</h4>
-                    <p><a href="#">경주지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
+                    <p><a href="#">경주 지진 분석 보고서</a><i class="ico_ext ext_pdf"></i></p>
                   </li>
                 </ul>
                 <ul class="eqtab_4 eqtab_content">
@@ -190,14 +267,14 @@
                     <div>
                       <ul class="case_img_wrap">
                         <li>
-                          <img src="../img/img_case02_07.png" alt="울산 지진 지역별 규모. 진원지에서 가까운 울산과 부산, 포항은 진도 4가, 마산과 대구, 영천은 진도 3, 대전과 경남 일부는 진도 2로 집계되었다.">
+                          <img src="../img/img_case06_07.png" alt="울산 지진 지역별 규모. 진원지에서 가까운 울산과 부산, 포항은 진도 4가, 마산과 대구, 영천은 진도 3, 대전과 경남 일부는 진도 2로 집계되었다.">
                           <p>[울산 지진 지역별 규모]<br>
                             출처: <a
                               href="https://www.ytn.co.kr/_ln/0103_201607060502357597" target='_blank'>연합뉴스</a>
                           </p>
                         </li>
                         <li>
-                          <img src="../img/img_case02_08.png" alt="실내의 화분이 파손되어 나뒹구는 모습">
+                          <img src="../img/img_case06_08.png" alt="실내의 화분이 파손되어 나뒹구는 모습">
                           <p>[울산 지진으로 인한 화분 파손]<br>
                             출처: <a href="https://www.yna.co.kr/view/AKR20160705183651057" target='_blank'>연합뉴스</a>
                           </p>
@@ -216,7 +293,22 @@
         </div>
       </div>
     </div>
-    @@include('inc/footer.html')
+    <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>
+<script src="../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
+<script src="../js/ui_common.js"></script>
   </div>
 
 </body>
