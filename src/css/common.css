@@ -299,7 +299,16 @@ a.ui-button:active,
 .ui-tabs .ui-tabs-nav{padding:0;border-bottom:1px solid #c5c5c5;}
 .ui-tabs .ui-tabs-panel{padding:0;}
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor{padding:4px 15px 8px;border-width:0;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{border-bottom:3px solid #176798;}
 .ui-tabs .ui-state-active a, .ui-tabs .ui-state-active a:link, .ui-tabs .ui-state-active a:visited{color:#3278a0;padding-bottom:8px;}
+.ui-tabs-vertical{width:100%;border:none;}
+.ui-tabs-vertical .ui-tabs-nav{float:left;padding: .2em .1em .2em .2em;width:200px;border:none;}
+.ui-tabs-vertical .ui-tabs-nav li{clear:left;width:100%;border:1px solid #c5c5c5;border-top-width:0;border-radius:0;}
+.ui-tabs-vertical .ui-tabs-nav li:first-child{border-top-width:1px;}
+.ui-tabs-vertical .ui-tabs-nav .ui-tabs-anchor,
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active a{display:block;width:100%;padding:5px 15px;box-sizing:border-box;}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active{border-right:3px solid #3278a0;border-bottom:1px solid #c5c5c5;margin:0;padding:0;}
+.ui-tabs-vertical .ui-tabs-panel{float:right;width:calc(100% - 220px);}
 
 .ui-timepicker-div.ui-timepicker-oneLine dl dd, .ui-timepicker-div.ui-timepicker-oneLine dl dd>div{width:auto;}
 .ui-timepicker-div .ui_tpicker_unit_hide,
@@ -338,3 +347,4 @@ a.ui-button:active,
 .login_backhome, .login_backhome a{font-size:15px;}
 .login_backhome a{position:relative;margin-left:2px;padding-right:22px;font-weight:bold;color:#176798;}
 .login_backhome a::after{position:absolute;top:1px;right:0;content:'\e932';display: inline-block;font-family:'axicon';font-size:20px;}
+.login_info{text-align:right;margin-top:20px;border-top:1px solid #dfdfdf;padding-top:5px;color:#777;}

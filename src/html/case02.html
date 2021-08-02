@@ -1,0 +1,97 @@
+@@include('inc/top.html')
+<body>
+<div class="wrap">
+  @@include('inc/header.html')
+  <div id="cont" class="cont max_width">
+    @@include('inc/breadcrumb.html')
+    <div class="content_tit">
+      <h1>부산 지진피해 위험요인</h1>
+    </div>
+    <div class="content_body case02">
+      <div id="tabs_v">
+        <ul class="site_tab">
+          <li><a href="#tabs-1">건축물 통계</a></li>
+          <li><a href="#tabs-2">건축물 내진율 통계</a></li>
+          <li><a href="#tabs-3">주간인구 통계</a></li>
+          <li><a href="#tabs-4">야간인구 통계</a></li>
+          <li><a href="#tabs-5">부산시 건축물 현존가치</a></li>
+          <li><a href="#tabs-6">지역별 지반특성</a></li>
+          <li><a href="#tabs-7">취약구역(경사도)</a></li>
+          <li><a href="#tabs-8">노후 건축물 분포</a></li>
+          <li><a href="#tabs-9">노령인구 분포</a></li>
+          <li><a href="#tabs-10">주요도로 교통량</a></li>
+        </ul>
+        <!-- 건축물 통계 -->
+        <div id="tabs-1" class="tab_cont tabs-1">
+          <div class="fl section">
+            <div class="tit">
+              <h2>GIS</h2>
+              <span class="fr">
+                <button class="btn axib axi_refresh">지도초기화</button>
+              </span>
+            </div>
+            <div class="gis_wrap">
+              <img src="http://placehold.it/500x550" alt="gis 영역">
+              @@include('inc/mag_legend.html')
+            </div>      
+          </div>
+          <div class="fr section">      
+            <div class="tit gis_arerT">
+              <h2>건축물 통계조회</h2>
+            </div>
+            <div class="search">
+              <ul class="use_grid">
+                <li class="input_s w4"><label for="">지역</label>
+                  <select name="" id=""><option value="">부산</option></select>
+                </li>            
+              </ul>
+              <span class="act_search">
+                <button type="button" class="btn btn_pink">초기화</button>
+                <button type="button" class="btn btn_mint">검색</button>
+              </span>
+            </div>
+            <div class="tbl_wrap">
+              <div class="tbl_areaT">
+                <span class="count">
+                  <b>건수</b>193건            
+                </span>
+              </div>
+              <table class="tbl_default">
+                <thead>
+                  <tr>
+                    <th id="th1" width="120">지역번호</th>
+                    <th id="th2" width="120">건물 수(동)</th>
+                    <th id="th3">비율(%)</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="tbl_scroll" style="height:435px;">
+                <table class="tbl_default tbl_hover">
+                  <tbody>
+                    <tr>
+                      <td width="120" headers="th1">-</td>
+                      <td width="120" headers="th2">-</td>
+                      <td headers="th3">-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 건축물 통계__e -->
+        <!-- 건축물 내진율 통계 -->
+        <div id="tabs-2" class="tab_cont tabs-2">
+        </div>
+        <!-- 건축물 내진율 통계__e -->
+        <!-- 주간인구 통계 -->
+        <div id="tabs-3" class="tab_cont tabs-3">
+        </div>
+        <!-- 주간인구 통계__e -->
+      </div>
+    </div>
+  </div>
+  @@include('inc/footer.html')    
+</div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+  <head>
+    <title>지진 사회현안 서비스 시스템</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
+    <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pop.css" />
+  </head>
+<body>
+<div class="wrap">
+  <!-- 바로가기 메뉴 -->
+<div id="accessibility">
+  <a href="#cont" tabindex="0">본문 바로가기</a>
+  <a href="#lnb" tabindex="1">주메뉴 바로가기</a>
+</div>
+<hr />
+<!-- 바로가기 메뉴__e -->
+<div class="header">
+  <div class="gnb max_width">
+    <span class="author">
+      <a href="main.html">dds</a> 
+    </span>        
+    <h1>부산 지진 피해 집계 및 AI 위험성 분석 시스템</h1>
+    <div class="util">
+      <ul>
+        <li>관리자님</li>
+        <li><button type="button" class="btn_util">내정보</button></li>
+        <li><button type="button" class="btn_util">로그아웃</button></li>
+      </ul>
+    </div>
+  </div>
+  <div id="lnb" class="lnb min_width">
+    <!-- 현재 사용자가 보고있는 페이지 메뉴를 감싼 li에 class='on'을 추가해주세요. -->
+    <div class="nav_wrap max_width">
+      <ul class="nav">
+        <li><a href="eqinfo01.html">지진발생정보</a>
+          <ul class="sub">
+            <li><a href="eqinfo01.html">국내지진 발생정보</a></li>
+            <li><a href="eqinfo02.html">국외지진 발생정보</a></li>
+          </ul>
+        </li>
+        <li class="on"><a href="felt01.html">지진유감신고</a>
+          <ul class="sub">
+            <li class="on"><a href="felt01.html">지진유감 신고하기</a></li>
+            <li><a href="felt02.html">지진유감 신고이력</a></li>
+            <li><a href="felt03.html">지진유감 실시간 집계</a></li>
+          </ul>
+        </li>
+        <li><a href="dam01.html">지진피해정보</a>
+          <ul class="sub">
+            <li><a href="dam01.html">지진피해 신고하기</a></li>
+            <li><a href="dam02.html">지진피해 신고이력</a></li>
+            <li><a href="dam03.html">지진피해 신고집계</a></li>
+          </ul>
+        </li>
+        <li><a href="case01.html">지진위험성분석</a>
+          <ul class="sub">
+            <!-- 컨텐츠미정 -->
+            <li><a href="case01.html">지진대비 필요성</a></li>
+            <li><a href="case02.html">부산 지진피해 위험요인</a></li>
+            <!-- 행안부자료링크 -->
+            <li><a href="">지진대응정보</a></li>
+            <li><a href="case04.html">관련사이트</a></li>
+            <li><a href="case05.html">국외 지진피해사례</a></li>
+            <li><a href="case06.html">국내 지진피해사례</a></li>
+            <li><a href="case07.html">부산 지진피해사례</a></li>
+          </ul>
+        </li>
+        <li><a href="admin01.html">관리자지원</a>
+          <ul class="sub">
+            <li><a href="admin01.html">사용자관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div id="cont" class="cont max_width main">
+    <div class="section recent">
+      <div class="tit">
+        <h1>최근 발생 지진정보</h1>
+      </div>
+      <div class="gis">
+        <div class="recent_eq">
+          <h2>경북 영덕군 M3.5 지진발생</h2>
+          <dl class="flex_wrap">
+            <dt>발생시각</dt>
+            <dd>2013-05-15 22:12:32</dd>
+            <dt class="fix4">규 모</dt>
+            <dd>M 3.5</dd>
+            <dt>발생위치</dt>
+            <dd>경북 영덕군 북동쪽 24㎞ 해역</dd>
+            <dt class="fix4">위 도</dt>
+            <dd>38.82</dd>
+            <dt class="fix4">경 도</dt>
+            <dd>125.56</dd>
+            <dt>발생깊이</dt>
+            <dd>10㎞</dd>
+            <dt>계기진도</dt>
+            <dd>최대진도 Ⅲ (경북)</dd>
+          </dl>
+          <div class="btn_wrap">
+            <button type="button" class="btn_maincont">지진유감신고</button>
+            <button type="button" class="btn_maincont">지진피해신고</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section flex_wrap declare">
+      <div class="article main_felt">
+        <div class="tit">
+          <h1>지진진동을 느끼셨나요?</h1>
+        </div>
+        <div class="body">
+          <p>본 시스템은 지진을 느꼈던 사람들로부터 정보를 수집하고 해당 지진에 대해 경험 한 것과 피해의 정도를 보여주는 지도를 만듭니다. 지진을 느끼셨다면 알려주십시오.</p>
+          <button type="button" class="btn_maincont">지진을 알려주세요!</button>
+        </div>
+      </div>
+      <div class="article main_dam">
+        <div class="tit">
+          <h1>지진으로 피해가 발생했나요?</h1>
+        </div>
+        <div class="body">
+          <p>지진으로 어떤 피해가 발생했나요?<br />
+           인명피해, 건물피해, 시설물피해등 지진으로 인한 피해를 입으셨다면 신고해 주시기 바랍니다.</p> <button type="button" class="btn_maincont">피해를 신고해 주세요!</button>
+        </div>
+      </div>
+      <div class="article main_declare">
+        <div id="tabs">
+          <ul class="tabs">
+            <li><a href="#tabs-1">지진유감신고</a></li>
+            <li><a href="#tabs-2">지진피해신고</a></li>
+          </ul>
+          <div id="tabs-1" class="tab_cont">
+            <div class="declare_intro">
+              <h1>진동을 느끼셨다면 신고해주세요!</h1>
+              <button type="button">신고하러 가기</button>
+            </div>
+            <table class="tbl_declare">
+              <thead>
+                <tr>
+                  <th scope="col">신고지역</th>
+                  <th scope="col">신고건수</th>
+                  <th scope="col">유감진도</th>
+                  <th scope="col">계기진도</th>
+                  <th scope="col">예측진도</th>
+                  <th scope="col">거리</th>
+                </tr>
+              </thead>
+              <tbody class="tbl_hover">
+                <tr class="on">
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="tabs-2" class="tab_cont">
+            <div class="declare_intro">
+              <h1>지진피해가 발생했다면 신고해주세요!</h1>
+              <button type="button">신고하러 가기</button>
+            </div>
+            <table class="tbl_declare">
+              <thead>
+                <tr>
+                  <th scope="col">신고지역</th>
+                  <th scope="col">신고건수</th>
+                  <th scope="col">유감진도</th>
+                  <th scope="col">계기진도</th>
+                  <th scope="col">예측진도</th>
+                  <th scope="col">거리</th>
+                </tr>
+              </thead>
+              <tbody class="tbl_hover">
+                <tr class="on">
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section banner">
+      <ul class="ban_list">
+        <li><a href="">부산 지진 사회현안<em>시스템 소개</em></a></li>
+        <li><a href="">상황에 따른 지진행동요령<em>지진 대응정보</em></a></li>
+        <li><a href="">지진관련 기관 및 협회<em>관련사이트</em></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer min_width">
+  <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
+  <div class="copy_wrap max_width">
+    <p class="copyright">
+      Copyright ⓒ All Rights Reserved.
+    </p>
+  </div>
+</div>
+<script src="../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../js/ui_common.js"></script>    
+</div>
+</body>
+</html>

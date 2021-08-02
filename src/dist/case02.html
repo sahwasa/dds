@@ -90,94 +90,99 @@
   </ul>
 </div>
     <div class="content_tit">
-      <h1>지진유감 실시간집계</h1>
+      <h1>부산 지진피해 위험요인</h1>
     </div>
-    <div class="content_body declare d_felt03_1">
-      <div class="fl section">
-        <!-- 좌측 메뉴 아코디언 -->
-        <div class="accordion felt01">
-          <div>
-            <h3>지진정보
-            <span class="btn_wrap">
-              <button type="button" class="btn btn_white">다른지진 선택</button>
-            </span>
-            </h3>
-            <div>
-              <dl class="flex_wrap eq_check">
-                <dt>진원시</dt>
-                <dd>2008-05-31 21:59:30.0</dd>
-                <dt>진원지</dt>
-                <dd>제주 제주시 서쪽 78㎞ 해역</dd>
-                <dt class="fix3">위도</dt>
-                <dd>38.82</dd>
-                <dt class="fix3">경도</dt>
-                <dd>125.65</dd>
-                <dt class="fix3">규모</dt>
-                <dd>4.2</dd>
-                <dt class="blind">gis</dt>
-                <dd>
-                  <img src="http://placehold.it/150x100" alt="">
-                </dd>
-              </dl>
+    <div class="content_body case02">
+      <div id="tabs_v">
+        <ul class="site_tab">
+          <li><a href="#tabs-1">건축물 통계</a></li>
+          <li><a href="#tabs-2">건축물 내진율 통계</a></li>
+          <li><a href="#tabs-3">주간인구 통계</a></li>
+          <li><a href="#tabs-4">야간인구 통계</a></li>
+          <li><a href="#tabs-5">부산시 건축물 현존가치</a></li>
+          <li><a href="#tabs-6">지역별 지반특성</a></li>
+          <li><a href="#tabs-7">취약구역(경사도)</a></li>
+          <li><a href="#tabs-8">노후 건축물 분포</a></li>
+          <li><a href="#tabs-9">노령인구 분포</a></li>
+          <li><a href="#tabs-10">주요도로 교통량</a></li>
+        </ul>
+        <!-- 건축물 통계 -->
+        <div id="tabs-1" class="tab_cont tabs-1">
+          <div class="fl section">
+            <div class="tit">
+              <h2>GIS</h2>
+              <span class="fr">
+                <button class="btn axib axi_refresh">지도초기화</button>
+              </span>
             </div>
+            <div class="gis_wrap">
+              <img src="http://placehold.it/500x550" alt="gis 영역">
+              <div class="legend">
+  <ul>
+    <li class="mag7">8 ≤ M ＜ 9 </li>
+    <li class="mag6">7 ≤ M ＜ 8 </li>
+    <li class="mag5">6 ≤ M ＜ 7 </li>
+    <li class="mag4">5 ≤ M ＜ 6 </li>
+    <li class="mag3">4 ≤ M ＜ 5 </li>
+    <li class="mag2">3 ≤ M ＜ 4 </li>
+    <li class="mag1">2 ≤ M ＜ 3 </li>
+  </ul>
+</div>
+            </div>      
           </div>
-        </div>
-      </div>
-      <div class="fr section">
-        <div id="tabs">
-          <ul>
-            <li><a href="#tabs-1">지역별</a></li>
-            <li><a href="#tabs-2">응답시간</a></li>
-          </ul>
-          <div id="tabs-1" class="tab_cont flex_wrap">
-            <div class="fl section">              
-              <div class="gis_wrap">
-                <img src="http://placehold.it/398x500" alt="gis 영역">
-                <i class="declarant" style="left:52px;top:295px;">신고자위치</i>
-                <i class="declarant" style="left:102px;top:195px;">신고자위치</i>
-                <i class="declarant" style="left:182px;top:295px;">신고자위치</i>
-              </div>      
+          <div class="fr section">      
+            <div class="tit gis_arerT">
+              <h2>건축물 통계조회</h2>
             </div>
-            <div class="fr section">      
-              <div class="tit">
-                <h2>지역별 지진유감 집계</h2>
-                <span class="fr radio_wrap">
-                  <label for=""><input type="radio" name="" id="" checked>구 단위</label>
-                  <label for=""><input type="radio" name="" id="">동 단위</label>
+            <div class="search">
+              <ul class="use_grid">
+                <li class="input_s w4"><label for="">지역</label>
+                  <select name="" id=""><option value="">부산</option></select>
+                </li>            
+              </ul>
+              <span class="act_search">
+                <button type="button" class="btn btn_pink">초기화</button>
+                <button type="button" class="btn btn_mint">검색</button>
+              </span>
+            </div>
+            <div class="tbl_wrap">
+              <div class="tbl_areaT">
+                <span class="count">
+                  <b>건수</b>193건            
                 </span>
               </div>
-              <div class="tbl_wrap">
-                <table class="tbl_default">
-                  <thead>
+              <table class="tbl_default">
+                <thead>
+                  <tr>
+                    <th id="th1" width="120">지역번호</th>
+                    <th id="th2" width="120">건물 수(동)</th>
+                    <th id="th3">비율(%)</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="tbl_scroll" style="height:435px;">
+                <table class="tbl_default tbl_hover">
+                  <tbody>
                     <tr>
-                      <th scope="col" width="180">신고지역</th>
-                      <th scope="col" width="60">계기진도</th>
-                      <th scope="col" width="60">유감진도</th>
-                      <th scope="col" width="60">신고건수</th>
-                      <th scope="col">거리</th>
+                      <td width="120" headers="th1">-</td>
+                      <td width="120" headers="th2">-</td>
+                      <td headers="th3">-</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
-                <div class="tbl_scroll" style="height:445px;">
-                  <table class="tbl_default tbl_hover">
-                    <tbody>
-                      <tr>
-                        <td width="180" class="alignL">-</td>
-                        <td width="60">-</td>
-                        <td width="60">-</td>
-                        <td width="60">-</td>
-                        <td>-</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
           </div>
-          <div id="tabs-2" class="tab_cont">
-            <!-- 차트영역 -->
-          </div>
         </div>
+        <!-- 건축물 통계__e -->
+        <!-- 건축물 내진율 통계 -->
+        <div id="tabs-2" class="tab_cont tabs-2">
+        </div>
+        <!-- 건축물 내진율 통계__e -->
+        <!-- 주간인구 통계 -->
+        <div id="tabs-3" class="tab_cont tabs-3">
+        </div>
+        <!-- 주간인구 통계__e -->
       </div>
     </div>
   </div>
@@ -194,7 +199,7 @@
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
-<script src="../js/ui_common.js"></script>
+<script src="../js/ui_common.js"></script>    
 </div>
 </body>
 </html>
