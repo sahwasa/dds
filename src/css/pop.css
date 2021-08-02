@@ -1,6 +1,7 @@
 /* pop common */
 .pop_overlay{position:fixed;z-index:8000;top:0;left:0;width:100vw;height:100vh;background-color: rgba(0, 0, 0, 0.3);}
 .pop_wrap{width:800px;position:fixed;top:50%;left:50%;border-radius:5px;background-color:#fff;transform:translateX(-50%) translateY(-50%);box-shadow:0 2px 5px rgba(0, 0, 0, 0.3);}
+.pop_wrap_s{width:380px;}
 .pop_tit{display:flex;justify-content:space-between;padding:5px 15px;border-radius:5px 5px 0 0;background-color:#176899;}
 .pop_tit h1{padding-top:3px;font-size:16px;color:#fff;}
 .btn_close{position:relative;top:0;width:30px;height:30px;border-radius:50%;border:2px solid #176899;}
@@ -8,6 +9,7 @@
 .pop_body{margin:1px;padding:15px;text-align:left;}
 .pop_wrap .btn_wrap{text-align:center;margin-top:20px;}
 .pop_wrap .btn_wrap .btn{padding:2px 15px;}
+.pop_wrap table input[type = text], .pop_wrap table input[type = date], .pop_wrap table input[type = password], .pop_wrap table select, .pop_wrap table textarea{width:100%;}
 
 /* .pop_wrap .search.f_sb{justify-content:space-between;}
 .pop_wrap table{border:1px solid #d7d7d7;}
@@ -22,3 +24,8 @@
 .pop_info::before{position:absolute;left:0; font-family:'axicon';content:'\f1d3';font-size:70px;color:#516875;}
 .p_vertification{width:320px;}
 .p_vertification p{word-break:keep-all;text-align:left;margin-bottom:15px;}
+
+/* p_admin01 */
+.p_admin01 th{text-align:left;}
+.tbl_info table, .tbl_info th, .tbl_info td{padding:5px 3px;}
+.p_admin01 .required_info{margin:0 0 10px;color: #f35857;}
