@@ -67,6 +67,8 @@
 
   // tab
   $("#tabs").tabs();
+  $( "#tabs_v" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+  $( "#tabs_v li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 
   // toggle
   $('.btn_toggle').on('click',function(e){
