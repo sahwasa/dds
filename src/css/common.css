@@ -157,6 +157,7 @@ td .ico_btn{vertical-align:top;margin-top:3px;}
 .axi_down::before{content:"\e069"}
 .axi_back::before{content:"\e852";}
 .axi_dtl::before{content:"\f00e";color:#2e66aa;}
+.axi_edit::before{content:"\e896";color:#2e66aa;font-size:16px;}
 .axi_tileView::before{content:"\e725";color:#666;}
 .axi_listView::before{content:"\e724";color:#666;}
 .axi_y,

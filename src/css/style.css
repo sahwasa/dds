@@ -313,3 +313,6 @@
 .area_dtl dt{flex:0 1 18%;font-weight:600;padding-left:2%;}
 .area_dtl dt::before{color:#f7574d;}
 .area_dtl dd{text-align:center;background-color:#f5f5f5;border-radius:5px;}
+
+/* admin */
+.admin01 .btn_wrap{margin-bottom:10px;}

@@ -1,0 +1,97 @@
+@@include('inc/top.html')
+
+<body>
+  <div class="wrap">
+    @@include('inc/header.html')
+    <div id="cont" class="cont max_width">
+      @@include('inc/breadcrumb.html')
+      <div class="content_tit">
+        <h1>사용자 관리</h1>
+      </div>
+      <div class="content_body admin01">
+        <div class="section">
+          <div class="article">
+            <div class="search">
+              <ul class="use_grid">
+                <li>
+                  <select title="부서선택">
+                    <option value="">부서선택</option>
+                  </select>
+                </li>
+                <li>
+                  <select title="검색조건">
+                    <option value="">검색조건</option>
+                  </select>
+                </li>
+                <li>
+                  <input type="text">
+                </li>
+              </ul>
+              <span class="act_search">
+                <button type="button" class="btn btn_mint">검색</button>
+              </span>
+            </div>
+            <div class="btn_wrap alignR">
+              <button type="button" class="btn btn_blue">사용자 추가</button>
+              <button type="button" class="btn btn_pink">사용자 삭제</button>
+            </div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="tbl_wrap">
+            <table class="tbl_default">
+              <thead>
+                <tr>
+                  <th id="th1" width="40">선택</th>
+                  <th id="th2" width="100">권한</th>
+                  <th id="th3" width="80">사용자ID</th>
+                  <th id="th4" width="90">사용자명</th>
+                  <th id="th5" width="95">소속기관</th>
+                  <th id="th6" width="90">부서</th>
+                  <th id="th7" width="95">직급</th>
+                  <th id="th8" width="150">등록일</th>
+                  <th id="th8" width="50">수정</th>
+                </tr>
+              </thead>
+            </table>
+            <div class="tbl_scroll" style="height:485px;">
+              <table class="tbl_default tbl_hover">
+                <tbody>
+                  <tr>
+                    <td width="40" headers="th1"><input type="checkbox"></td>
+                    <td width="100" headers="th2">관리자</td>
+                    <td width="80" headers="th3">sysadmin</td>
+                    <td width="90" headers="th4">홍길동</td>
+                    <td width="95" headers="th5">부산시청</td>
+                    <td width="90" headers="th6"></td>
+                    <td width="95" headers="th7"></td>
+                    <td width="150" headers="th8">2021-07-29</td>
+                    <td width="35" headers="th9" class="alignC"><button class="alignC axi_only axi_edit"></button></td>
+                  </tr>
+                  <tr>
+                    <td width="40" headers="th1"><input type="checkbox"></td>
+                    <td width="100" headers="th2">운영자</td>
+                    <td width="80" headers="th3">sysadmin</td>
+                    <td width="90" headers="th4">홍길동</td>
+                    <td width="95" headers="th5">부산시청</td>
+                    <td width="90" headers="th6"></td>
+                    <td width="95" headers="th7"></td>
+                    <td width="150" headers="th8">2021-07-29</td>
+                    <td width="35" headers="th9" class="alignC"><button class="alignC axi_only axi_edit"></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            @@include('inc/paginate.html')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('pop/p_admin01.html')
+  @@include('inc/footer.html')
+  </div>
+
+</body>
+
+</html>
