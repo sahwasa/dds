@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
     <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
     <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">    
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -86,7 +87,8 @@
       <div class="tit">
         <h1>최근 발생 지진정보</h1>
       </div>
-      <div class="gis">
+      <div class="gis_wrap">
+        <i class="epicenter" style="left:202px;top:195px;">진앙지</i>
         <div class="recent_eq">
           <h2>경북 영덕군 M3.5 지진발생</h2>
           <dl class="flex_wrap">
@@ -268,6 +270,76 @@
       </ul>
     </div>
   </div>
+  <div class="pop_overlay">
+  <div class="pop_wrap pop_wrap_s p_admin01">
+    <div class="pop_tit">
+      <h1>사용자 추가 / 수정</h1>
+      <button type="button" class="btn_close pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <p class="required_info alignR">*는 필수값 입니다.</p>
+        <table class="tbl_userinfo">
+          <caption>내정보</caption>
+          <tr>
+            <th scope="row">ID</th>
+            <td colspan="2">admin</td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="name" class="required">이름</label></th>
+            <td colspan="2"><input type="text" id="name"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="pw" class="required">비밀번호</label></th>
+            <td><input type="password" id="pw"></td>
+            <td>
+              <button type="button" class="btn btn_blueline">변경</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="pwcheck" class="required">비밀번호 확인</label></th>
+            <td colspan="2">
+              <input type="password" id="pwcheck">
+              <p class="validity">비밀번호가 일치하지 않습니다.</p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="division" class="required">소속기관</label></th>
+            <td colspan="2"><input type="text" id="division"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="team" class="required">부서</label></th>
+            <td colspan="2">
+              <input type="text" id="team">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="position">직급</label></th>
+            <td colspan="2"><input type="text" id="position"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="number">연락처</label></th>
+            <td colspan="2"><input type="text" id="number"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="phonenumber" class="required">핸드폰</label></th>
+            <td colspan="2">
+              <input type="text" id="phonenumber">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">권한</th>
+            <td colspan="2">관리자</td>
+          </tr>
+        </table>
+        <div class="btn_wrap">
+          <button type="button" class="btn btn_blue">저장</button>
+          <button type="button" class="btn btn_blueline pop_close">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <div class="footer min_width">
   <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
   <div class="copy_wrap max_width">
@@ -281,6 +353,8 @@
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
 <script src="../js/ui_common.js"></script>    
 </div>
 </body>
