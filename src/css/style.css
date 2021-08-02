@@ -243,8 +243,8 @@
 
 /* case */
 /* case05 & case06 */
-.case05 .section_l, .case06 .section_l{width:600px;margin-right:20px;}
-.case05 .section_r, .case06 .section_r{width:calc(100% - 620px);}
+.case05 .section_l, .case06 .section_l, .case07 .section_l{width:600px;margin-right:20px;}
+.case05 .section_r, .case06 .section_r, .case07 .section_r{width:calc(100% - 620px);}
 .case05 h2{margin-bottom:8px;font-size:18px;font-weight:bold;color:#176896;}
 .eq_map{position:relative;}
 .eq_map_wrap h3{margin:20px 0 10px;font-size:15px;font-weight:bold;letter-spacing: -0.38px;}
