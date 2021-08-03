@@ -121,10 +121,10 @@
 .main .tit h1{font-size:20px;font-family:'notokrM';}
 .main > .fl{width:63%;}
 .main > .fr{width:35%;}
-.main .gis_wrap{height:337px;background-color:#8dadc2;border:none;}
+.main .gis_wrap{height:378px;background-color:#8dadc2;border:none;}
 .main .recent{margin-bottom:20px;}
-.recent_eq{position:absolute;right:14px;top:50%;display:flex;flex-direction: column;justify-content:center;width:360px;height:300px;border:1px solid 
-#1c84bf;background-color:#fff;padding:20px;margin-top:-150px;}
+.recent_eq{position:absolute;right:14px;top:50%;display:flex;flex-direction: column;justify-content:center;width:300px;height:270px;border:1px solid 
+#1c84bf;background-color:rgba(255,255,255,.8);padding:15px;margin-top:-135px;}
 .recent_eq h2{font-size:20px;color:#1c84bf;margin-bottom:5px;}
 .recent_eq dt,
 .recent_eq dd{font-size:14px;color:#555;margin-top:4px;}
@@ -139,7 +139,7 @@
 .main_felt,
 .main_dam{width:358px;}
 .main_felt .body::before,
-.main_dam .body::before{display:block;content:"";height:200px;background:url(../img/img_main.png) 0 0 no-repeat;margin-bottom:5px;}
+.main_dam .body::before{display:block;content:"";height:150px;background:url(../img/img_main.png) 0 -50px no-repeat;margin-bottom:5px;}
 .main_dam .body::before{background-position-x:-368px;}
 .main_felt p,
 .main_dam p{font-size:14px;}
@@ -161,7 +161,7 @@ padding-right:72px;font-family:'notokrR';}
 .tbl_declare td{border-bottom:1px solid #c4c4c4;}
 .tbl_declare th{height:43px;}
 .tbl_declare td{height:39px;}
-.banner{height:308px;margin-top:55px;}
+.banner{height:256px;margin-top:57px;}
 .ban_list{display:flex;flex-direction:column; justify-content:space-between;height:100%;}
 .ban_list li{position:relative;flex:1;border:1px solid #c4c4c4;margin-top:10px;}
 .ban_list li:first-child{margin-top:0;}
