@@ -83,57 +83,61 @@
   </div>
 </div>
   <div id="cont" class="cont max_width main">
-    <div class="section recent">
-      <div class="tit">
-        <h1>최근 발생 지진정보</h1>
+    <div class="fl section">
+      <div class="section recent">
+        <div class="tit">
+          <h1>최근 발생 지진정보</h1>
+        </div>
+        <div class="gis_wrap">
+          <i class="epicenter" style="left:202px;top:195px;">진앙지</i>
+          <div class="recent_eq">
+            <h2>경북 영덕군 M3.5 지진발생</h2>
+            <dl class="flex_wrap">
+              <dt>발생시각</dt>
+              <dd>2013-05-15 22:12:32</dd>
+              <dt class="fix4">규 모</dt>
+              <dd>M 3.5</dd>
+              <dt>발생위치</dt>
+              <dd>경북 영덕군 북동쪽 24㎞ 해역</dd>
+              <dt class="fix4">위 도</dt>
+              <dd>38.82</dd>
+              <dt class="fix4">경 도</dt>
+              <dd>125.56</dd>
+              <dt>발생깊이</dt>
+              <dd>10㎞</dd>
+              <dt>계기진도</dt>
+              <dd>최대진도 Ⅲ (경북)</dd>
+            </dl>
+            <div class="btn_wrap">
+              <button type="button" class="btn_maincont">지진유감신고</button>
+              <button type="button" class="btn_maincont">지진피해신고</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="gis_wrap">
-        <i class="epicenter" style="left:202px;top:195px;">진앙지</i>
-        <div class="recent_eq">
-          <h2>경북 영덕군 M3.5 지진발생</h2>
-          <dl class="flex_wrap">
-            <dt>발생시각</dt>
-            <dd>2013-05-15 22:12:32</dd>
-            <dt class="fix4">규 모</dt>
-            <dd>M 3.5</dd>
-            <dt>발생위치</dt>
-            <dd>경북 영덕군 북동쪽 24㎞ 해역</dd>
-            <dt class="fix4">위 도</dt>
-            <dd>38.82</dd>
-            <dt class="fix4">경 도</dt>
-            <dd>125.56</dd>
-            <dt>발생깊이</dt>
-            <dd>10㎞</dd>
-            <dt>계기진도</dt>
-            <dd>최대진도 Ⅲ (경북)</dd>
-          </dl>
-          <div class="btn_wrap">
-            <button type="button" class="btn_maincont">지진유감신고</button>
-            <button type="button" class="btn_maincont">지진피해신고</button>
+      <div class="section flex_wrap declare">
+        <div class="article main_felt">
+          <div class="tit">
+            <h1>지진진동을 느끼셨나요?</h1>
+          </div>
+          <div class="body">
+            <p>본 시스템은 지진을 느꼈던 사람들로부터 정보를 수집하고 해당 지진에 대해 경험 한 것과 피해의 정도를 보여주는 지도를 만듭니다. 지진을 느끼셨다면 알려주십시오.</p>
+            <button type="button" class="btn_maincont">지진을 알려주세요!</button>
+          </div>
+        </div>
+        <div class="article main_dam">
+          <div class="tit">
+            <h1>지진으로 피해가 발생했나요?</h1>
+          </div>
+          <div class="body">
+            <p>지진으로 어떤 피해가 발생했나요?<br />
+            인명피해, 건물피해, 시설물피해등 지진으로 인한 피해를 입으셨다면 신고해 주시기 바랍니다.</p> <button type="button" class="btn_maincont">피해를 신고해 주세요!</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="section flex_wrap declare">
-      <div class="article main_felt">
-        <div class="tit">
-          <h1>지진진동을 느끼셨나요?</h1>
-        </div>
-        <div class="body">
-          <p>본 시스템은 지진을 느꼈던 사람들로부터 정보를 수집하고 해당 지진에 대해 경험 한 것과 피해의 정도를 보여주는 지도를 만듭니다. 지진을 느끼셨다면 알려주십시오.</p>
-          <button type="button" class="btn_maincont">지진을 알려주세요!</button>
-        </div>
-      </div>
-      <div class="article main_dam">
-        <div class="tit">
-          <h1>지진으로 피해가 발생했나요?</h1>
-        </div>
-        <div class="body">
-          <p>지진으로 어떤 피해가 발생했나요?<br />
-           인명피해, 건물피해, 시설물피해등 지진으로 인한 피해를 입으셨다면 신고해 주시기 바랍니다.</p> <button type="button" class="btn_maincont">피해를 신고해 주세요!</button>
-        </div>
-      </div>
-      <div class="article main_declare">
+    <div class="fr section">
+      <div class="section main_declare">
         <div id="tabs">
           <ul class="tabs">
             <li><a href="#tabs-1">지진유감신고</a></li>
@@ -157,6 +161,14 @@
               </thead>
               <tbody class="tbl_hover">
                 <tr class="on">
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
                   <td>부산시 해운대구</td>
                   <td>15</td>
                   <td>Ⅶ</td>
@@ -256,90 +268,29 @@
                   <td>Ⅲ</td>
                   <td>5㎞</td>
                 </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section banner">
-      <ul class="ban_list">
-        <li><a href="">부산 지진 사회현안<em>시스템 소개</em></a></li>
-        <li><a href="">상황에 따른 지진행동요령<em>지진 대응정보</em></a></li>
-        <li><a href="">지진관련 기관 및 협회<em>관련사이트</em></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="pop_overlay">
-  <div class="pop_wrap pop_wrap_s p_admin01">
-    <div class="pop_tit">
-      <h1>내정보</h1>
-      <button type="button" class="btn_close pop_close"></button>
-    </div>
-    <div class="pop_body">
-      <div class="pop_cont">
-        <p class="required_info alignR">*는 필수값 입니다.</p>
-        <table class="tbl_userinfo">
-          <caption>내정보</caption>
-          <tr>
-            <th scope="row">ID</th>
-            <td colspan="2">admin</td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="name" class="required">이름</label></th>
-            <td colspan="2"><input type="text" id="name"></td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="pw" class="required">비밀번호</label></th>
-            <td><input type="password" id="pw"></td>
-            <td>
-              <button type="button" class="btn btn_blueline">변경</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="pwcheck" class="required">비밀번호 확인</label></th>
-            <td colspan="2">
-              <input type="password" id="pwcheck">
-              <p class="validity">비밀번호가 일치하지 않습니다.</p>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="division" class="required">소속기관</label></th>
-            <td colspan="2"><input type="text" id="division"></td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="team" class="required">부서</label></th>
-            <td colspan="2">
-              <input type="text" id="team">
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="position">직급</label></th>
-            <td colspan="2"><input type="text" id="position"></td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="number">연락처</label></th>
-            <td colspan="2"><input type="text" id="number"></td>
-          </tr>
-          <tr>
-            <th scope="row"><label for="phonenumber" class="required">핸드폰</label></th>
-            <td colspan="2">
-              <input type="text" id="phonenumber">
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">권한</th>
-            <td colspan="2">관리자</td>
-          </tr>
-        </table>
-        <div class="btn_wrap">
-          <button type="button" class="btn btn_blue">저장</button>
-          <button type="button" class="btn btn_blueline pop_close">취소</button>
-        </div>
+      <div class="section banner">
+        <ul class="ban_list">
+          <li><a href="">부산 지진 사회현안<em>시스템 소개</em></a></li>
+          <li><a href="">상황에 따른 지진행동요령<em>지진 대응정보</em></a></li>
+          <li><a href="">지진관련 기관 및 협회<em>관련사이트</em></a></li>
+        </ul>
       </div>
     </div>
   </div>
-</div>
+  
   <div class="footer min_width">
   <a href="#" class="link_pagetop" title="맨위로 이동"><img src="../img/top.png" width="58px" height="55px" alt="맨위로"></a>
   <div class="copy_wrap max_width">
