@@ -117,12 +117,15 @@
 .tab_list_s .on a{background-color:#5b96ca;color:#fff;border-color:transparent;}
 
 /* main */
+.main{display:inline-flex;justify-content:space-between;}
 .main .tit h1{font-size:20px;font-family:'notokrM';}
-.main .gis_wrap{height:360px;background-color:#8dadc2;border:none;}
-.main .recent{margin-bottom:40px;}
-.recent_eq{position:absolute;right:14px;top:50%;width:406px;height:328px;border:1px solid 
-#1c84bf;background-color:#fff;padding:35px 40px;margin-top:-164px;}
-.recent_eq h2{font-size:20px;color:#1c84bf;margin-bottom:10px;}
+.main > .fl{width:63%;}
+.main > .fr{width:35%;}
+.main .gis_wrap{height:337px;background-color:#8dadc2;border:none;}
+.main .recent{margin-bottom:20px;}
+.recent_eq{position:absolute;right:14px;top:50%;display:flex;flex-direction: column;justify-content:center;width:360px;height:300px;border:1px solid 
+#1c84bf;background-color:#fff;padding:20px;margin-top:-150px;}
+.recent_eq h2{font-size:20px;color:#1c84bf;margin-bottom:5px;}
 .recent_eq dt,
 .recent_eq dd{font-size:14px;color:#555;margin-top:4px;}
 .recent_eq dt{width:75px;}
@@ -130,7 +133,7 @@
 .recent_eq dt::after{content:":";margin-left:5px;}
 .recent_eq dd{width:calc(100% - 75px);}
 .recent_eq .fix4{word-spacing:22px;}
-.recent_eq .btn_wrap{text-align:center;margin-top:15px;}
+.recent_eq .btn_wrap{text-align:center;margin-top:20px;}
 .recent_eq .btn_maincont{margin:0 3px;}
 .main .declare{justify-content:space-between;}
 .main_felt,
@@ -142,8 +145,7 @@
 .main_dam p{font-size:14px;}
 .btn_maincont{background-color:#fff;border:1px solid #1c84bf;color:#1c84bf; font-size:15px;margin-top:12px;line-height:29px;padding:0 20px;}
 .btn_maincont:hover{background-color:#1c84bf;color:#fff;}
-.main_declare{width:423px;}
-.main_declare .ui-tabs .ui-tabs-nav{border:none;margin-bottom:17px;}
+.main_declare .ui-tabs .ui-tabs-nav{border:none;margin:7px 0 11px;}
 .main_declare .ui-tabs .ui-tabs-nav li{border:1px solid #555;border-width:0 0 0 1px;line-height:16px;padding:0 20px;}
 .main_declare .ui-tabs .ui-tabs-nav li:first-child{border-left-width:0;padding-left:0;}
 .main_declare .ui-tabs .ui-tabs-nav a{font-size:18px;border:0;padding:0;}
@@ -159,15 +161,15 @@ padding-right:72px;font-family:'notokrR';}
 .tbl_declare td{border-bottom:1px solid #c4c4c4;}
 .tbl_declare th{height:43px;}
 .tbl_declare td{height:39px;}
-.banner{margin-top:40px;}
-.ban_list{display:flex;justify-content:space-between;}
-.ban_list li{position:relative;flex:1;border:1px solid #c4c4c4;margin-left:32px;}
-.ban_list li:first-child{margin-left:0;}
+.banner{height:308px;margin-top:55px;}
+.ban_list{display:flex;flex-direction:column; justify-content:space-between;height:100%;}
+.ban_list li{position:relative;flex:1;border:1px solid #c4c4c4;margin-top:10px;}
+.ban_list li:first-child{margin-top:0;}
 .ban_list li:hover{border-color:#1c84bf;}
 .ban_list li::after{position:absolute;right:22px;top:50%;transform:translateY(-50%); content:"";display:inline-block;width:60px;height:60px;background:url(../img/img_main.png) -35px -210px no-repeat;}
 .ban_list li:nth-child(2)::after{background-position-x:-115px;}
 .ban_list li:nth-child(3)::after{background-position-x:-195px;}
-.ban_list a{display:flex;flex-direction:column;justify-content:center;width:100%;height:100px;font-size:15px;color:#8f8f8f;padding-left:38px;}
+.ban_list a{display:flex;flex-direction:column;justify-content:center;width:100%;height:100%; font-size:15px;color:#8f8f8f;padding-left:38px;}
 .ban_list a em{display:block;font-size:16px;color:#555;font-family:'notokrM';}
 
 /* sub */

@@ -3,57 +3,61 @@
 <div class="wrap">
   @@include('inc/header.html')
   <div id="cont" class="cont max_width main">
-    <div class="section recent">
-      <div class="tit">
-        <h1>최근 발생 지진정보</h1>
+    <div class="fl section">
+      <div class="section recent">
+        <div class="tit">
+          <h1>최근 발생 지진정보</h1>
+        </div>
+        <div class="gis_wrap">
+          <i class="epicenter" style="left:202px;top:195px;">진앙지</i>
+          <div class="recent_eq">
+            <h2>경북 영덕군 M3.5 지진발생</h2>
+            <dl class="flex_wrap">
+              <dt>발생시각</dt>
+              <dd>2013-05-15 22:12:32</dd>
+              <dt class="fix4">규 모</dt>
+              <dd>M 3.5</dd>
+              <dt>발생위치</dt>
+              <dd>경북 영덕군 북동쪽 24㎞ 해역</dd>
+              <dt class="fix4">위 도</dt>
+              <dd>38.82</dd>
+              <dt class="fix4">경 도</dt>
+              <dd>125.56</dd>
+              <dt>발생깊이</dt>
+              <dd>10㎞</dd>
+              <dt>계기진도</dt>
+              <dd>최대진도 Ⅲ (경북)</dd>
+            </dl>
+            <div class="btn_wrap">
+              <button type="button" class="btn_maincont">지진유감신고</button>
+              <button type="button" class="btn_maincont">지진피해신고</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="gis_wrap">
-        <i class="epicenter" style="left:202px;top:195px;">진앙지</i>
-        <div class="recent_eq">
-          <h2>경북 영덕군 M3.5 지진발생</h2>
-          <dl class="flex_wrap">
-            <dt>발생시각</dt>
-            <dd>2013-05-15 22:12:32</dd>
-            <dt class="fix4">규 모</dt>
-            <dd>M 3.5</dd>
-            <dt>발생위치</dt>
-            <dd>경북 영덕군 북동쪽 24㎞ 해역</dd>
-            <dt class="fix4">위 도</dt>
-            <dd>38.82</dd>
-            <dt class="fix4">경 도</dt>
-            <dd>125.56</dd>
-            <dt>발생깊이</dt>
-            <dd>10㎞</dd>
-            <dt>계기진도</dt>
-            <dd>최대진도 Ⅲ (경북)</dd>
-          </dl>
-          <div class="btn_wrap">
-            <button type="button" class="btn_maincont">지진유감신고</button>
-            <button type="button" class="btn_maincont">지진피해신고</button>
+      <div class="section flex_wrap declare">
+        <div class="article main_felt">
+          <div class="tit">
+            <h1>지진진동을 느끼셨나요?</h1>
+          </div>
+          <div class="body">
+            <p>본 시스템은 지진을 느꼈던 사람들로부터 정보를 수집하고 해당 지진에 대해 경험 한 것과 피해의 정도를 보여주는 지도를 만듭니다. 지진을 느끼셨다면 알려주십시오.</p>
+            <button type="button" class="btn_maincont">지진을 알려주세요!</button>
+          </div>
+        </div>
+        <div class="article main_dam">
+          <div class="tit">
+            <h1>지진으로 피해가 발생했나요?</h1>
+          </div>
+          <div class="body">
+            <p>지진으로 어떤 피해가 발생했나요?<br />
+            인명피해, 건물피해, 시설물피해등 지진으로 인한 피해를 입으셨다면 신고해 주시기 바랍니다.</p> <button type="button" class="btn_maincont">피해를 신고해 주세요!</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="section flex_wrap declare">
-      <div class="article main_felt">
-        <div class="tit">
-          <h1>지진진동을 느끼셨나요?</h1>
-        </div>
-        <div class="body">
-          <p>본 시스템은 지진을 느꼈던 사람들로부터 정보를 수집하고 해당 지진에 대해 경험 한 것과 피해의 정도를 보여주는 지도를 만듭니다. 지진을 느끼셨다면 알려주십시오.</p>
-          <button type="button" class="btn_maincont">지진을 알려주세요!</button>
-        </div>
-      </div>
-      <div class="article main_dam">
-        <div class="tit">
-          <h1>지진으로 피해가 발생했나요?</h1>
-        </div>
-        <div class="body">
-          <p>지진으로 어떤 피해가 발생했나요?<br />
-           인명피해, 건물피해, 시설물피해등 지진으로 인한 피해를 입으셨다면 신고해 주시기 바랍니다.</p> <button type="button" class="btn_maincont">피해를 신고해 주세요!</button>
-        </div>
-      </div>
-      <div class="article main_declare">
+    <div class="fr section">
+      <div class="section main_declare">
         <div id="tabs">
           <ul class="tabs">
             <li><a href="#tabs-1">지진유감신고</a></li>
@@ -77,6 +81,14 @@
               </thead>
               <tbody class="tbl_hover">
                 <tr class="on">
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
+                <tr>
                   <td>부산시 해운대구</td>
                   <td>15</td>
                   <td>Ⅶ</td>
@@ -176,21 +188,29 @@
                   <td>Ⅲ</td>
                   <td>5㎞</td>
                 </tr>
+                <tr>
+                  <td>부산시 해운대구</td>
+                  <td>15</td>
+                  <td>Ⅶ</td>
+                  <td>Ⅲ</td>
+                  <td>Ⅲ</td>
+                  <td>5㎞</td>
+                </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section banner">
-      <ul class="ban_list">
-        <li><a href="">부산 지진 사회현안<em>시스템 소개</em></a></li>
-        <li><a href="">상황에 따른 지진행동요령<em>지진 대응정보</em></a></li>
-        <li><a href="">지진관련 기관 및 협회<em>관련사이트</em></a></li>
-      </ul>
+      <div class="section banner">
+        <ul class="ban_list">
+          <li><a href="">부산 지진 사회현안<em>시스템 소개</em></a></li>
+          <li><a href="">상황에 따른 지진행동요령<em>지진 대응정보</em></a></li>
+          <li><a href="">지진관련 기관 및 협회<em>관련사이트</em></a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  @@include('pop/p_myinfo.html')
+  <!-- @@include('pop/p_myinfo.html') -->
   @@include('inc/footer.html')    
 </div>
 </body>
