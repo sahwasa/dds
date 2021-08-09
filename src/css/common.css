@@ -208,6 +208,7 @@ textarea[disabled]{border:1px solid #999;color:#999;background-color:#fefefe;}
 .datepicker,
 .date{width:96px;}
 .datetimepicker{width:170px;letter-spacing:0;}
+.datetimepicker + .ui-datepicker-trigger{right:28px;}
 .timeform{width:50px;min-width:auto!important;}
 .radio_wrap label{margin-right:5px;}
 label input{margin-top:-3px;}
