@@ -139,6 +139,7 @@ b{font-weight:normal;font-family:'notokrM';}
 .btn_blueline{color:#1c67b2;border-color:#1c67b2;}
 .btn_redline{color:#f7574d;border-color:#f7574d;}
 .btn_gray{background-color:#7f7d7e;border-color:#686868;}
+.btn_mint{background-color:#1c84bf;border-color:#1c84bf;}
 .ico_btn{background:transparent;border:none;font-size:0;overflow:hidden;}
 td .ico_btn{vertical-align:top;margin-top:3px;}
 .ico_btn::before{display:inline-block;content:"";background-image:url(../img/btn_ico.png);width:18px;height:23px;line-height:0;vertical-align:baseline;}
